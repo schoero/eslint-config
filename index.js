@@ -51,6 +51,9 @@ module.exports = {
       "warn",
       "never"
     ],
+    "camelcase": [
+      "warn",
+    ],
     "array-bracket-spacing": [
       "warn",
       "never"

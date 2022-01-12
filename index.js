@@ -17,7 +17,8 @@ module.exports = {
     "sourceType": "module"
   },
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "unused-imports"
   ],
   "rules": {
     "no-async-promise-executor": "off",
@@ -138,6 +139,8 @@ module.exports = {
     ],
     "prefer-const": "warn",
     "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "warn",
+    "unused-imports/no-unused-vars": "off",
     "no-undef": "off",
     "linebreak-style": [
       "warn",

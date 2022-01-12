@@ -6,7 +6,7 @@ Personal ESLint config
 ### Installation
 
 ```sh
-npm i @schoero/eslint-config --save-dev
+npm i @schoero/eslint-config eslint eslint-plugin-unused-imports @typescript-eslint/eslint-plugin --save-dev
 ```
 
 <br/>

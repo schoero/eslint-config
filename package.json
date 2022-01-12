@@ -1,6 +1,6 @@
 {
   "name": "@schoero/eslint-config",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Personal ESLint config",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/schoero/eslint-config/issues"
   },
-  "homepage": "https://github.com/schoero/eslint-config#readme"
+  "homepage": "https://github.com/schoero/eslint-config#readme",
+  "peerDependencies": {
+    "eslint": ">= 8",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.8.1"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.8.1"
+  }
 }

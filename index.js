@@ -142,17 +142,17 @@ module.exports = {
     "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": "off",
     "no-undef": "off",
-    "linebreak-style": [
+
+
+    //-- Custom rules
+
+    "no-restricted-syntax": [
       "warn",
-      "unix"
-    ],
-    "quotes": [
-      "warn",
-      "double"
-    ],
-    "semi": [
-      "warn",
-      "always"
+      {
+        "selector": "TSPropertySignature[optional=true]:has(TSTypeAnnotation > TSTypeReference > Identifier[name='Array']), TSPropertySignature[optional=true]:has(TSTypeAnnotation > TSArrayType)",
+        "message": "No optional arrays"
+      }
     ]
+
   }
 };

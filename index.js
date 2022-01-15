@@ -21,43 +21,27 @@ module.exports = {
     "unused-imports"
   ],
   "rules": {
-    "no-async-promise-executor": "off",
-    "space-infix-ops": "warn",
-    "no-whitespace-before-property": "warn",
-    "space-in-parens": [
-      "warn",
-      "never"
-    ],
-    "no-extra-bind": "warn",
-    "comma-spacing": [
-      "warn",
+
+
+    //-- General styling
+
+    "@typescript-eslint/naming-convention": [
+      "warn", 
       {
-        "before": false,
-        "after": true
+        "selector": ["default"],
+        "format": ["camelCase"],
+        "modifiers": ["requiresQuotes"]
       }
     ],
-    "comma-style": [
+    "no-extra-semi": "off",
+    "@typescript-eslint/no-extra-semi": "warn",
+    "linebreak-style": [
       "warn",
-      "last"
+      "unix"
     ],
-    "comma-dangle": [
+    "quotes": [
       "warn",
-      "never"
-    ],
-    "computed-property-spacing": [
-      "warn",
-      "never"
-    ],
-    "func-call-spacing": [
-      "warn",
-      "never"
-    ],
-    "camelcase": [
-      "warn",
-    ],
-    "array-bracket-spacing": [
-      "warn",
-      "never"
+      "double"
     ],
     "brace-style": [
       "warn",
@@ -66,9 +50,74 @@ module.exports = {
         "allowSingleLine": true
       }
     ],
-    "function-paren-newline": [
+    "@typescript-eslint/method-signature-style": [
+      "warn",
+      "property"
+    ],
+
+
+    //-- Semicolon
+
+    "semi": "off",
+    "@typescript-eslint/semi": ["warn"],
+    "@typescript-eslint/member-delimiter-style": [
+      "warn",
+      {
+        "multiline": {
+          "delimiter": "semi",
+          "requireLast": true
+        },
+        "singleline": {
+          "delimiter": "semi",
+          "requireLast": true
+        },
+        "multilineDetection": "brackets"
+      }
+    ],
+
+
+    //-- Spacing
+
+    "no-trailing-spaces": "warn",
+    "space-infix-ops": "warn",
+    "no-whitespace-before-property": "warn",
+    "space-in-parens": [
       "warn",
       "never"
+    ],
+    "comma-spacing": [
+      "warn",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "computed-property-spacing": [
+      "warn",
+      "never"
+    ],
+    "array-bracket-spacing": [
+      "warn",
+      "never"
+    ],
+    "func-call-spacing": [
+      "warn",
+      "never"
+    ],
+    "no-multi-spaces": [
+      "warn",
+      {
+        "ignoreEOLComments": true,
+        "exceptions": {
+          "Property": true
+        }
+      }
+    ],
+    "function-paren-newline": [
+      "warn",
+      { 
+        "minItems": 6
+      }
     ],
     "space-before-function-paren": [
       "warn",
@@ -120,16 +169,6 @@ module.exports = {
         }
       }
     ],
-    "no-multi-spaces": [
-      "warn",
-      {
-        "ignoreEOLComments": true,
-        "exceptions": {
-          "Property": true
-        }
-      }
-    ],
-    "no-trailing-spaces": "warn",
     "indent": [
       "warn",
       2,
@@ -137,6 +176,28 @@ module.exports = {
         "SwitchCase": 1
       }
     ],
+    "object-curly-spacing": "off",
+    "@typescript-eslint/object-curly-spacing": [
+      "warn",
+      "always"
+    ],
+
+
+    //-- Comma
+    
+    "comma-style": [
+      "warn",
+      "last"
+    ],
+    "comma-dangle": [
+      "warn",
+      "never"
+    ],
+
+
+    //-- Minimize confusion
+
+    "no-extra-bind": "warn",
     "prefer-const": "warn",
     "no-unused-vars": "off",
     "unused-imports/no-unused-imports": "warn",

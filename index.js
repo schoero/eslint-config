@@ -212,6 +212,10 @@ module.exports = {
       {
         "selector": "TSPropertySignature[optional=true]:has(TSTypeAnnotation > TSTypeReference > Identifier[name='Array']), TSPropertySignature[optional=true]:has(TSTypeAnnotation > TSArrayType)",
         "message": "No optional arrays. Optional arrays are a source of confusion and should be avoided."
+      },
+      {
+        "selector": "TSIndexSignature > Identifier[name='key'] > TSTypeAnnotation:has(TSNumberKeyword)",
+        "message": "No number keys. Number keys get internally converted to strings and should be avoided."
       }
     ]
 

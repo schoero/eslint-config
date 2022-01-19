@@ -211,7 +211,7 @@ module.exports = {
       "warn",
       {
         "selector": "TSPropertySignature[optional=true]:has(TSTypeAnnotation > TSTypeReference > Identifier[name='Array']), TSPropertySignature[optional=true]:has(TSTypeAnnotation > TSArrayType)",
-        "message": "No optional arrays"
+        "message": "No optional arrays. Optional arrays are a source of confusion and should be avoided."
       }
     ]
 

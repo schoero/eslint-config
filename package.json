@@ -17,11 +17,10 @@
   },
   "homepage": "https://github.com/schoero/eslint-config#readme",
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
     "eslint": ">= 8",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.8.1"
-  },
-  "dependencies": {
-    "@typescript-eslint/parser": "^5.8.1"
+    "eslint-plugin-import-newlines": "^1.2.3"
   }
 }

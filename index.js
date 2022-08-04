@@ -18,7 +18,8 @@ module.exports = {
   },
   "plugins": [
     "@typescript-eslint",
-    "unused-imports"
+    "unused-imports",
+    "import-newlines"
   ],
   "rules": {
 
@@ -200,9 +201,24 @@ module.exports = {
     "no-extra-bind": "warn",
     "prefer-const": "warn",
     "no-unused-vars": "off",
+    "no-undef": "off",
+
+
+    //-- Imports
+
     "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": "off",
-    "no-undef": "off",
+    "import-newlines/enforce": "error",
+
+
+    //-- Width
+
+    "max-len": ["error", 119],
+    "import-newlines/enforce": [
+        "error",
+        6,
+        119
+    ],
 
 
     //-- Custom rules

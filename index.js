@@ -208,14 +208,14 @@ module.exports = {
 
     "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": "off",
-    "import-newlines/enforce": "error",
+    "import-newlines/enforce": "warn",
 
 
     //-- Width
 
-    "max-len": ["error", 119],
+    "max-len": ["warn", 119],
     "import-newlines/enforce": [
-        "error",
+        "warn",
         6,
         119
     ],

@@ -213,7 +213,7 @@ module.exports = {
 
     //-- Width
 
-    "max-len": ["warn", 119],
+    // "max-len": ["warn", 119],
     "import-newlines/enforce": [
         "warn",
         6,

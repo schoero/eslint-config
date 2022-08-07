@@ -1,6 +1,6 @@
 {
   "name": "@schoero/eslint-config",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Personal ESLint config",
   "main": "index.js",
   "scripts": {

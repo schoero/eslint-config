@@ -14,7 +14,8 @@ module.exports = {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2018,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": ["tsconfig.json"]
   },
   "plugins": [
     "@typescript-eslint",
@@ -202,6 +203,11 @@ module.exports = {
     "prefer-const": "warn",
     "no-unused-vars": "off",
     "no-undef": "off",
+
+
+    //-- Disable unnecessary rules like unnecessary optional chaining
+
+    "@typescript-eslint/no-unnecessary-condition": "warn",
 
 
     //-- Imports

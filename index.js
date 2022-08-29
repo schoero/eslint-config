@@ -220,7 +220,11 @@ module.exports = {
 
     //-- Sort keys
 
-    "typescript-sort-keys/interface": "warn",
+    "typescript-sort-keys/interface": [
+      "warn",
+      "asc",
+      { "caseSensitive": true, "natural": true, "requiredFirst": true }
+    ],
     "typescript-sort-keys/string-enum": "warn",
 
 

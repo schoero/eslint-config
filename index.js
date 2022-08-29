@@ -20,7 +20,8 @@ module.exports = {
   "plugins": [
     "@typescript-eslint",
     "unused-imports",
-    "import-newlines"
+    "import-newlines",
+    "typescript-sort-keys"
   ],
   "rules": {
 
@@ -215,6 +216,12 @@ module.exports = {
     "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": "off",
     "import-newlines/enforce": "warn",
+
+
+    //-- Sort keys
+
+    "typescript-sort-keys/interface": "warn",
+    "typescript-sort-keys/string-enum": "warn",
 
 
     //-- Width

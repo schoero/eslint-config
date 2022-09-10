@@ -42,7 +42,8 @@ module.exports = {
       "warn",
       "unix"
     ],
-    "quotes": [
+    "quotes": "off",
+    "@typescript-eslint/quotes": [
       "warn",
       "double"
     ],
@@ -267,6 +268,7 @@ module.exports = {
     "@typescript-eslint/no-loss-of-precision": "error",
     "no-extra-parens": "off",
     "@typescript-eslint/no-extra-parens": "warn",
+    "@typescript-eslint/unified-signatures": "warn",
 
 
     //-- Disable unnecessary rules like unnecessary optional chaining

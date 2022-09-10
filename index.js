@@ -46,7 +46,8 @@ module.exports = {
       "warn",
       "double"
     ],
-    "brace-style": [
+    "brace-style": "off",
+    "@typescript-eslint/brace-style": [
       "warn",
       "1tbs",
       {
@@ -56,6 +57,10 @@ module.exports = {
     "@typescript-eslint/method-signature-style": [
       "warn",
       "property"
+    ],
+    "@typescript-eslint/consistent-generic-constructors": [
+      "warn",
+      "constructor"
     ],
 
 
@@ -82,13 +87,60 @@ module.exports = {
     //-- Spacing
 
     "no-trailing-spaces": "warn",
-    "space-infix-ops": "warn",
     "no-whitespace-before-property": "warn",
+    "space-infix-ops": "off",
+    "@typescript-eslint/space-infix-ops": "warn",
+    "@typescript-eslint/type-annotation-spacing": "warn",
     "space-in-parens": [
       "warn",
       "never"
     ],
-    "comma-spacing": [
+    "padding-line-between-statements": "off",
+    "@typescript-eslint/padding-line-between-statements": [
+      "warn",
+      {
+        "blankLine": "always",
+        "prev": "expression",
+        "next": ["const", "let", "var"]
+      },
+      {
+        "blankLine": "always",
+        "prev": ["const", "let", "var"],
+        "next": "expression"
+      },
+      {
+        "blankLine": "always",
+        "prev": "function",
+        "next": "*"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "function"
+      },
+      {
+        "blankLine": "always",
+        "prev": "class",
+        "next": "*"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "class"
+      },
+      {
+        "blankLine": "always",
+        "prev": "export",
+        "next": "*"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "export"
+      },
+    ],
+    "comma-spacing": "off",
+    "@typescript-eslint/comma-spacing":  [
       "warn",
       {
         "before": false,
@@ -103,7 +155,8 @@ module.exports = {
       "warn",
       "never"
     ],
-    "func-call-spacing": [
+    "func-call-spacing": "off",
+    "@typescript-eslint/func-call-spacing":  [
       "warn",
       "never"
     ],
@@ -149,7 +202,8 @@ module.exports = {
       "warn",
       "as-needed"
     ],
-    "keyword-spacing": [
+    "keyword-spacing": "off",
+    "@typescript-eslint/keyword-spacing": [
       "warn",
       {
         "before": true,
@@ -172,7 +226,8 @@ module.exports = {
         }
       }
     ],
-    "indent": [
+    "indent": "off",
+    "@typescript-eslint/indent": [
       "warn",
       2,
       {
@@ -184,6 +239,8 @@ module.exports = {
       "warn",
       "always"
     ],
+    "lines-between-class-members": "off",
+    "@typescript-eslint/lines-between-class-members": "warn",
 
 
     //-- Comma
@@ -192,7 +249,8 @@ module.exports = {
       "warn",
       "last"
     ],
-    "comma-dangle": [
+    "comma-dangle": "off",
+    "@typescript-eslint/comma-dangle": [
       "warn",
       "never"
     ],
@@ -204,6 +262,11 @@ module.exports = {
     "prefer-const": "warn",
     "no-unused-vars": "off",
     "no-undef": "off",
+    "@typescript-eslint/no-misused-new": "warn",
+    "no-loss-of-precision": "off",
+    "@typescript-eslint/no-loss-of-precision": "error",
+    "no-extra-parens": "off",
+    "@typescript-eslint/no-extra-parens": "warn",
 
 
     //-- Disable unnecessary rules like unnecessary optional chaining
@@ -227,6 +290,11 @@ module.exports = {
     ],
     "typescript-sort-keys/string-enum": "warn",
 
+
+    //-- Sort union and intersection types
+
+    "@typescript-eslint/sort-type-union-intersection-members": "warn",
+    
 
     //-- Width
 

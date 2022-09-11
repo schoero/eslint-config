@@ -36,17 +36,37 @@ module.exports = {
         "modifiers": ["requiresQuotes"]
       }
     ],
+
+
+    //-- Semicolon
+
     "no-extra-semi": "off",
     "@typescript-eslint/no-extra-semi": "warn",
     "linebreak-style": [
       "warn",
       "unix"
     ],
+
+
+    //-- Quotes
+
     "quotes": "off",
     "@typescript-eslint/quotes": [
       "warn",
-      "double"
+      "double",
+      {
+        "allowTemplateLiterals": true
+      }
     ],
+    "quote-props": [
+      "warn",
+      "consistent-as-needed"
+    ],
+    "no-unexpected-multiline": "warn",
+
+
+    //-- Braces
+
     "brace-style": "off",
     "@typescript-eslint/brace-style": [
       "warn",
@@ -55,6 +75,7 @@ module.exports = {
         "allowSingleLine": true
       }
     ],
+
     "@typescript-eslint/method-signature-style": [
       "warn",
       "property"
@@ -81,6 +102,17 @@ module.exports = {
           "requireLast": true
         },
         "multilineDetection": "brackets"
+      }
+    ],
+
+
+    //-- Array style
+
+    "@typescript-eslint/array-type": [
+      "warn",
+      {
+        "default": "array",
+        "readonly": "array"
       }
     ],
 

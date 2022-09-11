@@ -148,11 +148,6 @@ module.exports = {
       },
       {
         "blankLine": "always",
-        "prev": "*",
-        "next": "function"
-      },
-      {
-        "blankLine": "always",
         "prev": "class",
         "next": "*"
       },
@@ -160,16 +155,6 @@ module.exports = {
         "blankLine": "always",
         "prev": "*",
         "next": "class"
-      },
-      {
-        "blankLine": "always",
-        "prev": "export",
-        "next": "*"
-      },
-      {
-        "blankLine": "always",
-        "prev": "*",
-        "next": "export"
       },
     ],
     "comma-spacing": "off",

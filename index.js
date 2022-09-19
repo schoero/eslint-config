@@ -21,7 +21,8 @@ module.exports = {
     "@typescript-eslint",
     "unused-imports",
     "import-newlines",
-    "typescript-sort-keys"
+    "typescript-sort-keys",
+    "simple-import-sort"
   ],
   "rules": {
 
@@ -298,6 +299,9 @@ module.exports = {
     "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": "off",
     "import-newlines/enforce": "warn",
+    "sort-imports": "off",
+    "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn",
 
 
     //-- Sort keys

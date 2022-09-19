@@ -1,4 +1,5 @@
 # eslint-config
+
 Personal ESLint config
 
 <br/>
@@ -6,7 +7,7 @@ Personal ESLint config
 ### Installation
 
 ```sh
-npm i @schoero/eslint-config eslint eslint-plugin-unused-imports @typescript-eslint/eslint-plugin --save-dev
+npm i --save-dev @schoero/eslint-config eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-plugin-unused-imports @typescript-eslint/eslint-plugin eslint-plugin-simple-import-sort eslint-plugin-typescript-sort-keys eslint-plugin-import-newlines
 ```
 
 <br/>

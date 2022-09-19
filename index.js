@@ -22,7 +22,7 @@ module.exports = {
     "unused-imports",
     "import-newlines",
     "typescript-sort-keys",
-    "simple-import-sort"
+    "simple-import-sort",
   ],
   "rules": {
 
@@ -36,16 +36,6 @@ module.exports = {
         "format": ["camelCase"],
         "modifiers": ["requiresQuotes"]
       }
-    ],
-
-
-    //-- Semicolon
-
-    "no-extra-semi": "off",
-    "@typescript-eslint/no-extra-semi": "warn",
-    "linebreak-style": [
-      "warn",
-      "unix"
     ],
 
 
@@ -105,6 +95,12 @@ module.exports = {
         "multilineDetection": "brackets"
       }
     ],
+    "no-extra-semi": "off",
+    "@typescript-eslint/no-extra-semi": "warn",
+    "linebreak-style": [
+      "warn",
+      "unix"
+    ],
 
 
     //-- Array style
@@ -114,6 +110,19 @@ module.exports = {
       {
         "default": "array",
         "readonly": "array"
+      }
+    ],
+
+    
+    //-- Arrow functions
+
+    "arrow-body-style": ["warn", "as-needed"],
+    "arrow-parens": ["warn", "as-needed"],
+    "arrow-spacing": [
+      "warn",
+      {
+        "before": true,
+        "after": true
       }
     ],
 
@@ -210,17 +219,6 @@ module.exports = {
         "classes": "always"
       }
     ],
-    "arrow-spacing": [
-      "warn",
-      {
-        "before": true,
-        "after": true
-      }
-    ],
-    "arrow-parens": [
-      "warn",
-      "as-needed"
-    ],
     "keyword-spacing": "off",
     "@typescript-eslint/keyword-spacing": [
       "warn",
@@ -260,6 +258,21 @@ module.exports = {
     ],
     "lines-between-class-members": "off",
     "@typescript-eslint/lines-between-class-members": "warn",
+    "yield-star-spacing": [
+      "warn", {
+        "before": true,
+        "after": false
+      }
+    ],
+    "spaced-comment": [
+      "warn",
+      "always",
+      { 
+        "exceptions": ["-", "+"],
+        "markers": ["--"]
+      }
+    ],
+    "computed-property-spacing": ["warn", "never"],
 
 
     //-- Comma
@@ -279,6 +292,7 @@ module.exports = {
 
     "no-extra-bind": "warn",
     "prefer-const": "warn",
+    "prefer-template": "warn",
     "no-unused-vars": "off",
     "no-undef": "off",
     "@typescript-eslint/no-misused-new": "warn",
@@ -287,6 +301,8 @@ module.exports = {
     "no-extra-parens": "off",
     "@typescript-eslint/no-extra-parens": "warn",
     "@typescript-eslint/unified-signatures": "warn",
+
+    "yoda": "warn",
 
 
     //-- Disable unnecessary rules like unnecessary optional chaining

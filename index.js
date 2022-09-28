@@ -23,6 +23,7 @@ module.exports = {
     "import-newlines",
     "typescript-sort-keys",
     "simple-import-sort",
+    "sort-keys-fix"
   ],
   "rules": {
 
@@ -322,10 +323,23 @@ module.exports = {
 
     //-- Sort keys
 
+    "sort-keys": [
+      "warn",
+      "asc",
+      {
+        "natural": true,
+        "allowLineSeparatedGroups": true
+      }
+    ],
+    "sort-keys-fix/sort-keys-fix": "warn",
     "typescript-sort-keys/interface": [
       "warn",
       "asc",
-      { "caseSensitive": true, "natural": true, "requiredFirst": true }
+      { 
+        "caseSensitive": true,
+        "natural": true, 
+        "requiredFirst": true,
+      }
     ],
     "typescript-sort-keys/string-enum": "warn",
 

@@ -309,6 +309,8 @@ module.exports = {
     //-- Disable unnecessary rules like unnecessary optional chaining
 
     "@typescript-eslint/no-unnecessary-condition": "warn",
+    "no-unused-expressions": "off",
+    "@typescript-eslint/no-unused-expressions": "warn",
 
 
     //-- Imports

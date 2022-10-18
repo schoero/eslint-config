@@ -317,7 +317,6 @@ module.exports = {
 
     "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": "off",
-    "import-newlines/enforce": "warn",
     "sort-imports": "off",
     "simple-import-sort/imports": "warn",
     "simple-import-sort/exports": "warn",
@@ -353,11 +352,12 @@ module.exports = {
 
     //-- Width
 
-    // "max-len": ["warn", 119],
     "import-newlines/enforce": [
         "warn",
-        6,
-        119
+        {
+          "items": 6,
+          "max-len": 119
+        }
     ],
 
 

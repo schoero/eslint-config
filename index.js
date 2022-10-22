@@ -258,7 +258,12 @@ module.exports = {
       "always"
     ],
     "lines-between-class-members": "off",
-    "@typescript-eslint/lines-between-class-members": "warn",
+    "@typescript-eslint/lines-between-class-members": [
+      "warn",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
     "yield-star-spacing": [
       "warn", {
         "before": true,

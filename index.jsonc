@@ -119,6 +119,7 @@
           "property"
         ],
 
+
         //-- General styling
 
         "@typescript-eslint/naming-convention": [
@@ -131,8 +132,14 @@
         ],
         "@typescript-eslint/no-extra-parens": "warn",
         "@typescript-eslint/no-extra-semi": "warn",
+
+
+        //-- Code quality
+
+        "@typescript-eslint/no-floating-promises": "warn",
         "@typescript-eslint/no-loss-of-precision": "error",
         "@typescript-eslint/no-misused-new": "warn",
+        "@typescript-eslint/no-misused-promises": "error",
 
 
         //-- Disable unnecessary rules like unnecessary optional chaining
@@ -143,6 +150,7 @@
           "warn",
           "always"
         ],
+
         "@typescript-eslint/padding-line-between-statements": [
           "warn",
           {

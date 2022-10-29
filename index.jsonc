@@ -110,6 +110,9 @@
           }
         ],
 
+        "no-dupe-class-members": "off", // eslint-disable-next-line jsonc/sort-keys
+        "@typescript-eslint/no-dupe-class-members": "error",
+
         "no-extra-parens": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/no-extra-parens": "warn",
 
@@ -381,6 +384,7 @@
       }
     ],
     "linebreak-style": ["warn", "unix"],
+    "no-dupe-class-members": "error",
     "no-extra-bind": "warn",
     "no-extra-parens": "warn",
     "no-extra-semi": "warn",

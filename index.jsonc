@@ -38,12 +38,25 @@
       "rules": {
         "@typescript-eslint/array-type": ["warn", { "default": "array", "readonly": "array" }],
         "@typescript-eslint/ban-ts-comment": ["error", { "ts-ignore": "allow-with-description" }],
+
+        "brace-style": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/brace-style": ["warn", "1tbs", { "allowSingleLine": true }],
+
+        "comma-dangle": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/comma-dangle": ["warn", "never"],
+
+        "comma-spacing": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/comma-spacing": ["warn", { "after": true, "before": false }],
+
         "@typescript-eslint/consistent-generic-constructors": ["warn", "constructor"],
+
+        "func-call-spacing": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/func-call-spacing": ["warn", "never"],
+
+        "indent": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/indent": ["warn", 2, { "SwitchCase": 1 }],
+
+        "keyword-spacing": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/keyword-spacing": [
           "warn",
           {
@@ -67,7 +80,10 @@
             }
           }
         ],
+
+        "lines-between-class-members": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/lines-between-class-members": ["warn", { "exceptAfterSingleLine": true }],
+
         "@typescript-eslint/member-delimiter-style": [
           "warn",
           {
@@ -91,15 +107,29 @@
             "selector": ["default"]
           }
         ],
+
+        "no-extra-parens": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/no-extra-parens": "warn",
+
+        "no-extra-semi": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/no-extra-semi": "warn",
+
         "@typescript-eslint/no-floating-promises": "warn",
+
+        "no-loss-of-precision": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/no-loss-of-precision": "error",
+
         "@typescript-eslint/no-misused-new": "warn",
         "@typescript-eslint/no-misused-promises": "error",
         "@typescript-eslint/no-unnecessary-condition": "warn",
+
+        "no-unused-expressions": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/no-unused-expressions": "warn",
+
+        "object-curly-spacing": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/object-curly-spacing": ["warn", "always"],
+
+        "padding-line-between-statements": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/padding-line-between-statements": [
           "warn",
           {
@@ -123,22 +153,20 @@
             "prev": "*"
           }
         ],
+
+        "quotes": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/quotes": ["warn", "double", { "allowTemplateLiterals": true }],
+
+        "semi": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/semi": "warn",
+
         "@typescript-eslint/sort-type-union-intersection-members": "warn",
+
+        "space-infix-ops": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/space-infix-ops": "warn",
+
         "@typescript-eslint/type-annotation-spacing": "warn",
         "@typescript-eslint/unified-signatures": "warn",
-        "brace-style": "off",
-        "comma-dangle": "off",
-        "comma-spacing": "off",
-        "func-call-spacing": "off",
-        "indent": "off",
-        "keyword-spacing": "off",
-        "lines-between-class-members": "off",
-        "no-extra-parens": "off",
-        "no-extra-semi": "off",
-        "no-loss-of-precision": "off",
         "no-restricted-syntax": [
           "warn",
           {
@@ -147,14 +175,8 @@
           }
         ],
         "no-undef": "off",
-        "no-unused-expressions": "off",
         "no-unused-vars": "off",
-        "object-curly-spacing": "off",
-        "padding-line-between-statements": "off",
-        "quotes": "off",
-        "semi": "off",
         "sort-imports": "off",
-        "space-infix-ops": "off",
         "typescript-sort-keys/interface": [
           "warn",
           "asc",

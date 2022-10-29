@@ -6,7 +6,8 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:jsonc/recommended-with-jsonc"
+    "plugin:jsonc/recommended-with-jsonc",
+    "plugin:yml/standard"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -19,7 +20,8 @@
     "typescript-sort-keys",
     "simple-import-sort",
     "sort-keys-fix",
-    "eslint-plugin-jsonc"
+    "eslint-plugin-jsonc",
+    "eslint-plugin-yml"
   ],
   // eslint-disable-next-line jsonc/sort-keys
   "overrides": [
@@ -310,6 +312,26 @@
               "exclude"
             ],
             "pathPattern": "^$"
+          }
+        ]
+      }
+    },
+
+
+    //-- YAML
+
+    {
+      "files": ["*.yaml", "*.yml"],
+      "parser": "yaml-eslint-parser",
+      "rules": {
+        "yml/quotes": ["warn", { "avoidEscape": true, "prefer": "double" }],
+        "yml/sort-keys": [
+          "warn",
+          "asc",
+          {
+            "caseSensitive": false,
+            "minKeys": 2,
+            "natural": true
           }
         ]
       }

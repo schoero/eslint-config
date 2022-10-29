@@ -455,7 +455,8 @@
               "dependencies",
               "optionalDependencies",
               "devDependencies",
-              "keywords"
+              "keywords",
+              "volta"
             ],
             "pathPattern": "^$"
           },

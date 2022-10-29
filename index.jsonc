@@ -386,7 +386,7 @@
       "files": ["*.json", "*.json5", "*.jsonc"],
       "parser": "jsonc-eslint-parser",
       "rules": {
-        "array-element-newline": ["warn",  { "consistent": true, "multiline": true }],
+        "jsonc/array-element-newline": ["warn", "consistent"],
         "jsonc/array-bracket-spacing": ["warn", "never"],
         "jsonc/comma-dangle": ["error", "never"],
         "jsonc/comma-style": ["warn", "last"],

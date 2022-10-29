@@ -386,9 +386,10 @@
       "files": ["*.json", "*.json5", "*.jsonc"],
       "parser": "jsonc-eslint-parser",
       "rules": {
+        "array-element-newline": ["warn",  { "consistent": true, "multiline": true }],
         "jsonc/array-bracket-spacing": ["warn", "never"],
         "jsonc/comma-dangle": ["error", "never"],
-        "jsonc/comma-style": ["error", "last"],
+        "jsonc/comma-style": ["warn", "last"],
         "jsonc/indent": ["warn", 2],
         "jsonc/key-spacing": ["warn", { "afterColon": true, "beforeColon": false }],
         "jsonc/object-curly-newline": ["warn", { "consistent": true, "multiline": true }],

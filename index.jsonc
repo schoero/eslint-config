@@ -432,11 +432,10 @@
               "name",
               "displayName",
               "description",
-              "keywords",
               "license",
               "author",
-              "private",
               "funding",
+              "private",
               "homepage",
               "repository",
               "bugs",
@@ -455,7 +454,8 @@
               "peerDependenciesMeta",
               "dependencies",
               "optionalDependencies",
-              "devDependencies"
+              "devDependencies",
+              "keywords"
             ],
             "pathPattern": "^$"
           },

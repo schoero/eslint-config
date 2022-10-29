@@ -469,6 +469,37 @@
           }
         ]
       }
+    },
+
+
+    //-- TSConfig json
+
+    {
+      "files": ["tsconfig.json", "tsconfig.*.json"],
+      "rules": {
+        "jsonc/sort-keys": [
+          "warn",
+          {
+            "order": [
+              {
+                "order": {
+                  "type": "asc"
+                }
+              }
+            ],
+            "pathPattern": "^.*..*$"
+          }, 
+          {
+            "order": [
+              "extends",
+              "compilerOptions",
+              "include",
+              "exclude"
+            ],
+            "pathPattern": "^$"
+          }
+        ]
+      }
     }
 
   ],

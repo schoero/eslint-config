@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/schoero/eslint-config/issues"
   },
-  "main": "index.js",
+  "main": "index.jsonc",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

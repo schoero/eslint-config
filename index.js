@@ -417,6 +417,16 @@ module.exports = {
         "jsonc/sort-keys": [
           "warn",
           {
+            "pathPattern": "^.*\..*$",
+            "order": [
+              {
+                "order": {
+                  "type": "asc",
+                }
+              }
+            ]
+          }, 
+          {
             "pathPattern": "^$",
             "order": [
               "version",

@@ -1,31 +1,31 @@
 {
-  "name": "@schoero/eslint-config",
   "version": "1.12.1",
+  "name": "@schoero/eslint-config",
   "description": "Personal ESLint config",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "license": "MIT",
+  "author": "Roger Schönbächler",
+  "homepage": "https://github.com/schoero/eslint-config#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/schoero/eslint-config.git"
   },
-  "author": "Roger Schönbächler",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/schoero/eslint-config/issues"
   },
-  "homepage": "https://github.com/schoero/eslint-config#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.8.1",
     "@typescript-eslint/parser": "^5.8.1",
     "eslint": ">= 8",
     "eslint-plugin-autofix": "^1.1.0",
     "eslint-plugin-import-newlines": "^1.2.3",
+    "eslint-plugin-jsonc": "^2.5.0",
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-plugin-typescript-sort-keys": "^2.1.0",
-    "eslint-plugin-unused-imports": "^2.0.0",
-    "eslint-plugin-jsonc": "^2.5.0"
+    "eslint-plugin-unused-imports": "^2.0.0"
   }
 }

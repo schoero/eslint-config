@@ -13,6 +13,9 @@
     "url": "https://github.com/schoero/eslint-config/issues"
   },
   "main": "index.jsonc",
+  "files": [
+    "index.jsonc"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

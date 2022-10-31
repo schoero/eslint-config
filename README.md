@@ -8,8 +8,7 @@ Personal ESLint config
   * JavaScript
   * TypeScript
   * JSON
-  * YAML  
-
+  * YAML
 * Auto sort imports
 * Auto sort keys in objects, types/interfaces and json files
 * Semicolons
@@ -23,7 +22,7 @@ Personal ESLint config
 npm i --save-dev @schoero/eslint-config
 ```
 
-If you use npm < 7, you need to install the peer dependencies manually:
+If you use npm < 7, you need to install the peer dependencies manually.
 
 ### Usage
 

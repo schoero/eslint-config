@@ -38,7 +38,9 @@
         "sourceType": "module"
       },
       "rules": {
+        "@typescript-eslint/adjacent-overload-signatures": "warn",
         "@typescript-eslint/array-type": ["warn", { "default": "array", "readonly": "array" }],
+        "@typescript-eslint/await-thenable": "warn",
         "@typescript-eslint/ban-ts-comment": ["error", { "ts-ignore": "allow-with-description" }],
 
         "brace-style": "off", // eslint-disable-next-line jsonc/sort-keys

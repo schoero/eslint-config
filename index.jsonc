@@ -42,7 +42,7 @@
         "@typescript-eslint/adjacent-overload-signatures": "warn",
         "@typescript-eslint/array-type": ["warn", { "default": "array", "readonly": "array" }],
         "@typescript-eslint/await-thenable": "warn",
-        "@typescript-eslint/ban-ts-comment": ["error", { "ts-ignore": "allow-with-description" }],
+        "@typescript-eslint/ban-ts-comment": ["warn", { "ts-ignore": "allow-with-description" }],
 
         "brace-style": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/brace-style": ["warn", "1tbs", { "allowSingleLine": true }],
@@ -128,10 +128,10 @@
         "@typescript-eslint/no-floating-promises": "warn",
 
         "no-loss-of-precision": "off", // eslint-disable-next-line jsonc/sort-keys
-        "@typescript-eslint/no-loss-of-precision": "error",
+        "@typescript-eslint/no-loss-of-precision": "warn",
 
         "@typescript-eslint/no-misused-new": "warn",
-        "@typescript-eslint/no-misused-promises": "error",
+        "@typescript-eslint/no-misused-promises": "warn",
         "@typescript-eslint/no-unnecessary-condition": "warn",
 
         "no-unused-expressions": "off", // eslint-disable-next-line jsonc/sort-keys
@@ -211,7 +211,7 @@
       "rules": {
         "jsonc/array-bracket-spacing": ["warn", "never"],
         "jsonc/array-element-newline": ["warn", "consistent"],
-        "jsonc/comma-dangle": ["error", "never"],
+        "jsonc/comma-dangle": ["warn", "never"],
         "jsonc/comma-style": ["warn", "last"],
         "jsonc/indent": ["warn", 2],
         "jsonc/key-spacing": ["warn", { "afterColon": true, "beforeColon": false }],
@@ -442,7 +442,7 @@
     "no-extra-bind": "warn",
     "no-extra-parens": "warn",
     "no-extra-semi": "warn",
-    "no-loss-of-precision": "error",
+    "no-loss-of-precision": "warn",
     "no-mixed-spaces-and-tabs": "warn",
     "no-multi-spaces": ["warn", { "exceptions": { "Property": true }, "ignoreEOLComments": true }],
     "no-trailing-spaces": "warn",

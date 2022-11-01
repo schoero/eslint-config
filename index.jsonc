@@ -43,7 +43,6 @@
         "@typescript-eslint/array-type": ["warn", { "default": "array", "readonly": "array" }],
         "@typescript-eslint/await-thenable": "warn",
         "@typescript-eslint/ban-ts-comment": ["error", { "ts-ignore": "allow-with-description" }],
-        "@typescript-eslint/consistent-type-imports": ["warn"],
 
         "brace-style": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/brace-style": ["warn", "1tbs", { "allowSingleLine": true }],

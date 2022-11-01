@@ -10,7 +10,7 @@ Personal ESLint config
   * JSON
   * YAML
 * Auto sort imports
-* Auto sort keys in objects, types/interfaces and json files
+* Auto sort keys in objects, types, interfaces, json files and yaml files
 * Semicolons
 * Double quotes
 * 2 spaces
@@ -34,6 +34,16 @@ Create an .eslintrc.json with the following content:
 }
 ```
 
+### Config
+
+It is also recommended to create a `.eslintignore` file with the following content:
+
+```txt
+node_modules
+!/.vscode
+!/.github
+```
+
 ### VSCode integration
 
 For automatic code formatting on save install the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and add the following to your settings.json:
@@ -52,16 +62,16 @@ To configure the extension properly, create a `.vscode/settings.json` with the f
 
 ```jsonc
 {
-  "[json]": {
+  "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "[jsonc]": {
+  "[json]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[json5]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "[javascript]": {
+  "[jsonc]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[typescript]": {

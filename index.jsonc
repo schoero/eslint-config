@@ -21,7 +21,8 @@
     "simple-import-sort",
     "sort-keys-fix",
     "eslint-plugin-jsonc",
-    "eslint-plugin-yml"
+    "eslint-plugin-yml",
+    "eslint-plugin-import"
   ],
   // eslint-disable-next-line jsonc/sort-keys
   "overrides": [
@@ -42,6 +43,7 @@
         "@typescript-eslint/array-type": ["warn", { "default": "array", "readonly": "array" }],
         "@typescript-eslint/await-thenable": "warn",
         "@typescript-eslint/ban-ts-comment": ["error", { "ts-ignore": "allow-with-description" }],
+        "@typescript-eslint/consistent-type-imports": ["warn"],
 
         "brace-style": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/brace-style": ["warn", "1tbs", { "allowSingleLine": true }],
@@ -53,6 +55,9 @@
         "@typescript-eslint/comma-spacing": ["warn", { "after": true, "before": false }],
 
         "@typescript-eslint/consistent-generic-constructors": ["warn", "constructor"],
+
+        "dot-notation": "off", // eslint-disable-next-line jsonc/sort-keys
+        "@typescript-eslint/dot-notation": ["warn", { "allowKeywords": true }],
 
         "func-call-spacing": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/func-call-spacing": ["warn", "never"],
@@ -183,7 +188,6 @@
         ],
         "no-undef": "off",
         "no-unused-vars": "off",
-        "sort-imports": "off",
         "typescript-sort-keys/interface": [
           "warn",
           "asc",
@@ -362,6 +366,7 @@
     "computed-property-spacing": ["warn", "never"],
     "curly": ["warn", "all"],
     "dot-location": ["warn", "property"],
+    "dot-notation": ["warn", { "allowKeywords": true }],
     "eol-last": ["warn", "always"],
     "eqeqeq": ["warn", "always"],
     "func-call-spacing": ["warn", "never"],
@@ -465,8 +470,15 @@
     "semi": "warn",
     "semi-spacing": ["warn", { "after": true, "before": false }],
     "semi-style": ["warn", "last"],
+
+    "sort-imports": "off", // eslint-disable-next-line jsonc/sort-keys
     "simple-import-sort/exports": "warn",
-    "simple-import-sort/imports": "warn",
+    "simple-import-sort/imports": "warn", // eslint-disable-next-line jsonc/sort-keys
+    "import/order": "off", // eslint-disable-next-line jsonc/sort-keys
+    "import/first": "warn",
+    "import/newline-after-import": "warn",
+    "import/no-duplicates": "error",
+
     "sort-keys": ["warn", "asc", { "allowLineSeparatedGroups": true, "natural": true }],
     "sort-keys-fix/sort-keys-fix": "warn",
     "space-before-blocks": ["warn", { "classes": "always", "functions": "always", "keywords": "never" }],

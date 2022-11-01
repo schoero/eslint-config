@@ -349,7 +349,9 @@
   //-- JavaScript
 
   "rules": {
+    "array-bracket-newline": ["warn", "consistent"],
     "array-bracket-spacing": ["warn", "never"],
+    "array-element-newline": ["warn", "consistent"],
     "arrow-body-style": ["warn", "as-needed"],
     "arrow-parens": ["warn", "as-needed"],
     "arrow-spacing": ["warn", { "after": true, "before": true }],
@@ -358,10 +360,17 @@
     "comma-spacing": ["warn", { "after": true, "before": false }],
     "comma-style": ["warn", "last"],
     "computed-property-spacing": ["warn", "never"],
+    "curly": ["warn", "all"],
+    "dot-location": ["warn", "property"],
+    "eol-last": ["warn", "always"],
+    "eqeqeq": ["warn", "always"],
     "func-call-spacing": ["warn", "never"],
+    "func-style": ["warn", "declaration", { "allowArrowFunctions": true }],
     "function-paren-newline": ["warn", { "minItems": 6 }],
     "import-newlines/enforce": ["warn", { "items": 6, "max-len": 119 }],
     "indent": ["warn", 2, { "SwitchCase": 1 }],
+    "jsx-quotes": ["warn", "prefer-double"],
+    "key-spacing": ["warn", { "afterColon": true, "beforeColon": false }],
     "keyword-spacing": [
       "warn",
       {
@@ -386,17 +395,41 @@
       }
     ],
     "linebreak-style": ["warn", "unix"],
+    "multiline-ternary": ["warn", "always-multiline"],
+    "newline-per-chained-call": ["warn", { "ignoreChainWithDepth": 2 }],
     "no-dupe-class-members": "error",
     "no-extra-bind": "warn",
     "no-extra-parens": "warn",
     "no-extra-semi": "warn",
     "no-loss-of-precision": "error",
+    "no-mixed-spaces-and-tabs": "warn",
     "no-multi-spaces": ["warn", { "exceptions": { "Property": true }, "ignoreEOLComments": true }],
     "no-trailing-spaces": "warn",
     "no-unexpected-multiline": "warn",
+    "no-unneeded-ternary": "warn",
     "no-unused-expressions": "warn",
+    "no-unused-labels": "warn",
+    "no-useless-call": "warn",
+    "no-useless-catch": "warn",
+    "no-useless-computed-key": "warn",
+    "no-useless-concat": "warn",
+    "no-useless-constructor": "warn",
+    "no-useless-escape": "warn",
+    "no-useless-rename": "warn",
+    "no-useless-return": "warn",
+    "no-var": "warn",
     "no-whitespace-before-property": "warn",
+    "object-curly-newline": ["warn", {
+      "ExportDeclaration": { "consistent": true, "multiline": true },
+      "ImportDeclaration": { "consistent": true, "multiline": true },
+      "ObjectExpression": { "consistent": true, "multiline": true },
+      "ObjectPattern": { "consistent": true, "multiline": true }
+    }],
     "object-curly-spacing": ["warn", "always"],
+    "object-property-newline": ["warn", { "allowMultiplePropertiesPerLine": true }],
+    "object-shorthand": ["warn", "always"],
+    "one-var-declaration-per-line": ["warn", "always"],
+    "operator-linebreak": ["warn", "after", { "overrides": { ":": "before", "?": "before" } }],
     "padding-line-between-statements": [
       "warn",
       {
@@ -420,11 +453,18 @@
         "prev": "*"
       }
     ],
+    "prefer-arrow-callback": "warn",
     "prefer-const": "warn",
+    "prefer-exponentiation-operator": "warn",
+    "prefer-object-spread": "warn",
     "prefer-template": "warn",
     "quote-props": ["warn", "consistent-as-needed"],
     "quotes": ["warn", "double", { "allowTemplateLiterals": true }],
+    "radix": "warn",
+    "rest-spread-spacing": ["warn", "never"],
     "semi": "warn",
+    "semi-spacing": ["warn", { "after": true, "before": false }],
+    "semi-style": ["warn", "last"],
     "simple-import-sort/exports": "warn",
     "simple-import-sort/imports": "warn",
     "sort-keys": ["warn", "asc", { "allowLineSeparatedGroups": true, "natural": true }],
@@ -433,7 +473,14 @@
     "space-before-function-paren": ["warn", { "anonymous": "never", "asyncArrow": "never", "named": "never" }],
     "space-in-parens": ["warn", "never"],
     "space-infix-ops": "warn",
+    "space-unary-ops": [
+      2, {
+        "nonwords": false,
+        "words": true
+      }],
     "spaced-comment": ["warn", "always", { "exceptions": ["-", "+"], "markers": ["--"] }],
+    "template-curly-spacing": ["warn", "never"],
+    "template-tag-spacing": ["warn", "never"],
     "unused-imports/no-unused-imports": "warn",
     "yield-star-spacing": ["warn", { "after": false, "before": true }],
     "yoda": "warn"

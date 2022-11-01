@@ -242,6 +242,8 @@
             "order": [
               {
                 "order": {
+                  "caseSensitive": true,
+                  "natural": true,
                   "type": "asc"
                 }
               }
@@ -307,6 +309,8 @@
             "order": [
               {
                 "order": {
+                  "caseSensitive": true,
+                  "natural": true,
                   "type": "asc"
                 }
               }
@@ -341,6 +345,39 @@
             "caseSensitive": false,
             "minKeys": 2,
             "natural": true
+          }
+        ]
+      }
+    },
+
+
+    //-- GitHub CI/CD
+
+    {
+      "files": [".github/workflows/*.yaml", ".github/workflows/*.yml"],
+      "parser": "yaml-eslint-parser",
+      "rules": {
+        "yml/sort-keys": [
+          "warn",
+          {
+            "order": [
+              {
+                "order": {
+                  "caseSensitive": true,
+                  "natural": true,
+                  "type": "asc"
+                }
+              }
+            ],
+            "pathPattern": "^.*..*$"
+          },
+          {
+            "order": [
+              "name",
+              "on",
+              "jobs"
+            ],
+            "pathPattern": "^$"
           }
         ]
       }

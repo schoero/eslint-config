@@ -85,3 +85,15 @@ To configure the extension properly, create a `.vscode/settings.json` with the f
   }
 }
 ```
+
+If you want to have linting scripts, you can use something like this in the `package.json`:
+
+```jsonc
+{
+  "scripts": {
+    "lint": "node_modules/.bin/eslint --ext .ts,.tsx,.js,.jsx,.json,.jsonc,.yml ./",
+    "lint:ci": "npm run lint -- --max-warnings 0",
+    "lint:fix": "npm run lint -- --fix",
+  }
+}
+```

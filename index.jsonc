@@ -543,7 +543,7 @@
     "sort-keys": ["warn", "asc", { "allowLineSeparatedGroups": true, "natural": true }],
     "sort-keys-fix/sort-keys-fix": "warn",
     "space-before-blocks": ["warn", { "classes": "always", "functions": "always", "keywords": "never" }],
-    "space-before-function-paren": ["warn", { "anonymous": "never", "asyncArrow": "never", "named": "never" }],
+    "space-before-function-paren": ["warn", { "anonymous": "never", "asyncArrow": "always", "named": "never" }],
     "space-in-parens": ["warn", "never"],
     "space-infix-ops": "warn",
     "space-unary-ops": [

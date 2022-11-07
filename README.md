@@ -31,7 +31,7 @@ If you use npm < 7, you need to install the peer dependencies manually.
 
 ### Usage
 
-Create an .eslintrc.json with the following content:
+Create a `.eslintrc.json` with the following content:
 
 ```jsonc
 {

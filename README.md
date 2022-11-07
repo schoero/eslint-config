@@ -4,13 +4,18 @@ Personal ESLint config
 
 ## Key features
 
+* No prettier
 * Linting and auto fixing for the following languages:
   * JavaScript
   * TypeScript
   * JSON
   * YAML
-* Auto sort imports
+* Linting and auto fixing in code fences in markdown files
+* Auto sort and group imports
 * Auto sort keys in objects, types, interfaces, json files and yaml files
+
+## Code style
+
 * Semicolons
 * Double quotes
 * 2 spaces
@@ -28,7 +33,7 @@ If you use npm < 7, you need to install the peer dependencies manually.
 
 Create an .eslintrc.json with the following content:
 
-```js
+```jsonc
 {
   "extends": "@schoero"
 }
@@ -77,12 +82,12 @@ To configure the extension properly, create a `.vscode/settings.json` with the f
   "[typescript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "eslint.validate": ["javascript", "typescript", "json", "jsonc", "json5", "yaml"],
-  "prettier.enable": false,
-  "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "editor.formatOnSave": false,
+  "eslint.validate": ["javascript", "typescript", "json", "jsonc", "json5", "yaml"],
+  "prettier.enable": false
 }
 ```
 
@@ -93,7 +98,7 @@ If you want to have linting scripts, you can use something like this in the `pac
   "scripts": {
     "lint": "node_modules/.bin/eslint --ext .ts,.tsx,.js,.jsx,.json,.jsonc,.yml ./",
     "lint:ci": "npm run lint -- --max-warnings 0",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:fix": "npm run lint -- --fix"
   }
 }
 ```

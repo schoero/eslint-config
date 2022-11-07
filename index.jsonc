@@ -7,7 +7,8 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:jsonc/recommended-with-jsonc",
-    "plugin:yml/standard"
+    "plugin:yml/standard",
+    "plugin:markdown/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -22,7 +23,8 @@
     "sort-keys-fix",
     "eslint-plugin-jsonc",
     "eslint-plugin-yml",
-    "eslint-plugin-import"
+    "eslint-plugin-import",
+    "markdown"
   ],
   // eslint-disable-next-line jsonc/sort-keys
   "overrides": [
@@ -226,6 +228,20 @@
     },
 
 
+    //-- Standalone TypeScript
+
+    {
+      "files": [
+        "**/*.config.ts",
+        "**/*.md/*.ts",
+        "**/*.md/*.tsx"
+      ],
+      "parserOptions": {
+        "createDefaultProgram": true
+      }
+    },
+
+
     // -- JSON
 
     {
@@ -405,6 +421,14 @@
           }
         ]
       }
+    },
+
+
+    //-- Markdown
+
+    {
+      "files": ["**/*.md"],
+      "processor": "markdown/markdown"
     }
 
   ],

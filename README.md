@@ -51,7 +51,7 @@ node_modules
 
 ### VSCode integration
 
-For automatic code formatting on save install the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and add the following to your settings.json:
+For automatic code formatting on save, install the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
 To recommend the extension in your repository create a `.vscode/extensions.json` with the following content:
 

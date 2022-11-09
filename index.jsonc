@@ -279,15 +279,11 @@
         "jsonc/sort-keys": [
           "warn",
           {
-            "order": [
-              {
-                "order": {
-                  "caseSensitive": true,
-                  "natural": true,
-                  "type": "asc"
-                }
-              }
-            ],
+            "order": {
+              "caseSensitive": true,
+              "natural": true,
+              "type": "asc"
+            },
             "pathPattern": "^.*..*$"
           },
           {
@@ -346,15 +342,11 @@
         "jsonc/sort-keys": [
           "warn",
           {
-            "order": [
-              {
-                "order": {
-                  "caseSensitive": true,
-                  "natural": true,
-                  "type": "asc"
-                }
-              }
-            ],
+            "order": {
+              "caseSensitive": true,
+              "natural": true,
+              "type": "asc"
+            },
             "pathPattern": "^.*..*$"
           },
           {
@@ -400,15 +392,11 @@
         "yml/sort-keys": [
           "warn",
           {
-            "order": [
-              {
-                "order": {
-                  "caseSensitive": true,
-                  "natural": true,
-                  "type": "asc"
-                }
-              }
-            ],
+            "order": {
+              "caseSensitive": true,
+              "natural": true,
+              "type": "asc"
+            },
             "pathPattern": "^.*..*$"
           },
           {

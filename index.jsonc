@@ -493,7 +493,7 @@
     "no-loss-of-precision": "warn",
     "no-mixed-spaces-and-tabs": "warn",
     "no-multi-spaces": ["warn", { "exceptions": { "Property": true }, "ignoreEOLComments": true }],
-    "no-multiple-empty-lines": ["warn", { "max": 2 }],
+    "no-multiple-empty-lines": ["warn", { "max": 2, "maxBOF": 0, "maxEOF": 0 }],
     "no-trailing-spaces": "warn",
     "no-unexpected-multiline": "warn",
     "no-unneeded-ternary": "warn",

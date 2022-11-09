@@ -24,6 +24,7 @@
     "eslint-plugin-jsonc",
     "eslint-plugin-yml",
     "eslint-plugin-import",
+    "eslint-plugin-tsdoc",
     "markdown"
   ],
   // eslint-disable-next-line jsonc/sort-keys
@@ -213,6 +214,7 @@
         ],
         "no-undef": "off",
         "no-unused-vars": "off",
+        "tsdoc/syntax": "warn",
         "typescript-sort-keys/interface": [
           "warn",
           "asc",

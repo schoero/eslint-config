@@ -11,6 +11,7 @@ Personal ESLint config
   * JSON
   * YAML
 * Linting and auto fixing in code fences in markdown files
+* Linting of TSDoc comments
 * Auto sort and group imports
 * Auto sort keys in objects, types, interfaces, json files and yaml files
 

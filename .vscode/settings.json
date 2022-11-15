@@ -23,7 +23,6 @@
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
-    "source.addMissingImports": true,
     "source.organizeImports": false,
   },
 

@@ -84,7 +84,8 @@ To configure the extension properly, create a `.vscode/settings.json` with the f
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
   },
   "editor.formatOnSave": false,
   "eslint.validate": ["javascript", "typescript", "json", "jsonc", "json5", "yaml"],

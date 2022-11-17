@@ -477,6 +477,7 @@
     "logical-assignment-operators": ["warn", "always", { "enforceForIfStatements": true }],
     "multiline-ternary": ["warn", "always-multiline"],
     "newline-per-chained-call": ["warn", { "ignoreChainWithDepth": 2 }],
+    "no-constant-binary-expression": "warn",
     "no-dupe-class-members": "error",
     "no-empty-static-block": "warn",
     "no-extra-bind": "warn",
@@ -555,7 +556,7 @@
     "import/order": "off", // eslint-disable-next-line jsonc/sort-keys
     "import/first": "warn",
     "import/newline-after-import": ["warn", { "count": 2 }],
-    "import/no-duplicates": "error",
+    "import/no-duplicates": "warn",
 
     "sort-keys": ["warn", "asc", { "allowLineSeparatedGroups": true, "natural": true }],
     "sort-keys-fix/sort-keys-fix": "warn",

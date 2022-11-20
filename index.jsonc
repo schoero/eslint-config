@@ -193,7 +193,7 @@
         ],
 
         "quotes": "off", // eslint-disable-next-line jsonc/sort-keys
-        "@typescript-eslint/quotes": ["warn", "double", { "allowTemplateLiterals": true }],
+        "@typescript-eslint/quotes": ["warn", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
 
         "semi": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/semi": "warn",
@@ -544,7 +544,7 @@
     "prefer-object-spread": "warn",
     "prefer-template": "warn",
     "quote-props": ["warn", "consistent-as-needed"],
-    "quotes": ["warn", "double", { "allowTemplateLiterals": true }],
+    "quotes": ["warn", "double", { "allowTemplateLiterals": true, "avoidEscape": true }],
     "radix": "warn",
     "rest-spread-spacing": ["warn", "never"],
     "semi": "warn",

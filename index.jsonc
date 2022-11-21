@@ -31,6 +31,16 @@
   "overrides": [
 
 
+    //-- JavaScript
+
+    {
+      "files": ["*.js", "*.jsx"],
+      "parserOptions": {
+        "sourceType": "module"
+      }
+    },
+
+
     //-- TypeScript
 
     {
@@ -38,8 +48,7 @@
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "ecmaVersion": 2018,
-        "project": ["tsconfig.json"],
-        "sourceType": "module"
+        "project": ["tsconfig.json"]
       },
       "rules": {
         "@typescript-eslint/adjacent-overload-signatures": "warn",
@@ -425,7 +434,7 @@
   ],
 
 
-  //-- JavaScript
+  //-- Default (JavaScript)
 
   "rules": {
     "array-bracket-newline": ["warn", "consistent"],

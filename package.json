@@ -12,13 +12,16 @@
   "bugs": {
     "url": "https://github.com/schoero/eslint-config/issues"
   },
+  "env": {
+    "node": true
+  },
   "main": "index.jsonc",
-  "files": [
-    "index.jsonc"
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "index.jsonc"
+  ],
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",

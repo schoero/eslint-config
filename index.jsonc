@@ -405,20 +405,35 @@
         "yml/sort-keys": [
           "warn",
           {
-            "order": {
-              "caseSensitive": true,
-              "natural": true,
-              "type": "asc"
-            },
-            "pathPattern": "^.*..*$"
-          },
-          {
             "order": [
               "name",
               "on",
               "jobs"
             ],
             "pathPattern": "^$"
+          },
+          {
+            "order": [
+              "audit",
+              "verify",
+              "lint",
+              "test",
+              "build",
+              "docs",
+              "documentation",
+              "pages",
+              "deploy",
+              "publish"
+            ],
+            "pathPattern": "^jobs.*"
+          },
+          {
+            "order": {
+              "caseSensitive": true,
+              "natural": true,
+              "type": "asc"
+            },
+            "pathPattern": "^.*$"
           }
         ]
       }

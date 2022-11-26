@@ -376,6 +376,35 @@
     },
 
 
+    //-- eslintrc json
+
+    {
+      "files": [".eslintrc.json", "eslintrc.json"],
+      "rules": {
+        "jsonc/sort-keys": [
+          "warn",
+          {
+            "order": {
+              "caseSensitive": true,
+              "natural": true,
+              "type": "asc"
+            },
+            "pathPattern": "^.*..*$"
+          },
+          {
+            "order": [
+              "extends",
+              "plugins",
+              "overrides",
+              "rules"
+            ],
+            "pathPattern": "^$"
+          }
+        ]
+      }
+    },
+
+
     //-- YAML
 
     {

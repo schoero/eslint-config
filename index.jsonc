@@ -20,7 +20,7 @@
     "unused-imports",
     "import-newlines",
     "typescript-sort-keys",
-    "simple-import-sort",
+    "import",
     "sort-keys-fix",
     "eslint-plugin-jsonc",
     "eslint-plugin-yml",
@@ -28,6 +28,17 @@
     "eslint-plugin-tsdoc",
     "markdown"
   ],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "tsconfig.json"
+      }
+    }
+  },
   // eslint-disable-next-line jsonc/sort-keys
   "overrides": [
 
@@ -502,6 +513,10 @@
     "func-call-spacing": ["warn", "never"],
     "func-style": ["warn", "declaration", { "allowArrowFunctions": true }],
     "function-paren-newline": ["warn", { "minItems": 6 }],
+    "import/first": "warn",
+    "import/newline-after-import": ["warn", { "count": 2 }],
+    "import/no-duplicates": "warn",
+    "import/no-relative-packages": "warn",
     "import-newlines/enforce": ["warn", { "items": 6, "max-len": 119 }],
     "indent": ["warn", 2, { "SwitchCase": 1 }],
     "jsx-quotes": ["warn", "prefer-double"],
@@ -607,13 +622,23 @@
     "semi-style": ["warn", "last"],
 
     "sort-imports": "off", // eslint-disable-next-line jsonc/sort-keys
-    "simple-import-sort/exports": "warn",
-    "simple-import-sort/imports": "warn", // eslint-disable-next-line jsonc/sort-keys
-    "import/order": "off", // eslint-disable-next-line jsonc/sort-keys
-    "import/first": "warn",
-    "import/newline-after-import": ["warn", { "count": 2 }],
-    "import/no-duplicates": "warn",
-
+    "import/order": [
+      "warn", {
+        "alphabetize": {
+          "caseInsensitive": true,
+          "order": "asc"
+        },
+        "groups": [
+          "builtin",
+          "external",
+          "object",
+          "index",
+          "parent",
+          "sibling",
+          "type"
+        ],
+        "newlines-between": "always"
+      }],
     "sort-keys": ["warn", "asc", { "allowLineSeparatedGroups": true, "natural": true }],
     "sort-keys-fix/sort-keys-fix": "warn",
     "space-before-blocks": ["warn", { "classes": "always", "functions": "always", "keywords": "never" }],

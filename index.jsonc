@@ -27,6 +27,17 @@
     "tsdoc",
     "markdown"
   ],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx", ".mts", ".mtsx", ".cts", ".ctsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "tsconfig.json"
+      }
+    }
+  },
   // eslint-disable-next-line jsonc/sort-keys
   "overrides": [
 

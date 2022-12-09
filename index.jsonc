@@ -44,7 +44,7 @@
     //-- TypeScript
 
     {
-      "files": ["*.ts", "*.tsx"],
+      "files": ["*.ts", "*.tsx", ".mts", ".mtsx", ".cts", ".ctsx"],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "ecmaVersion": 2018,
@@ -244,8 +244,14 @@
     {
       "files": [
         "**/*.config.ts",
+        "**/*.config.mts",
+        "**/*.config.cts",
         "**/*.md/*.ts",
-        "**/*.md/*.tsx"
+        "**/*.md/*.tsx",
+        "**/*.md/*.mts",
+        "**/*.md/*.mtsx",
+        "**/*.md/*.cts",
+        "**/*.md/*.ctsx"
       ],
       "parserOptions": {
         "createDefaultProgram": true

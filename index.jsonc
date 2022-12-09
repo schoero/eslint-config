@@ -222,7 +222,6 @@
           }
         ],
         "no-undef": "off",
-        "no-unused-vars": "off",
         "tsdoc/syntax": "warn",
         "typescript-sort-keys/interface": [
           "warn",
@@ -233,8 +232,7 @@
             "requiredFirst": true
           }
         ],
-        "typescript-sort-keys/string-enum": "warn",
-        "unused-imports/no-unused-vars": "off"
+        "typescript-sort-keys/string-enum": "warn"
       }
     },
 
@@ -517,7 +515,7 @@
     "function-paren-newline": ["warn", { "minItems": 6 }],
     "import/first": "warn",
     "import/newline-after-import": ["warn", { "count": 2 }],
-    "import/no-duplicates": "warn",
+    "import/no-duplicates": "error",
     "import/no-relative-packages": "warn",
     "import-newlines/enforce": ["warn", { "items": 6, "max-len": 119 }],
     "indent": ["warn", 2, { "SwitchCase": 1 }],
@@ -566,6 +564,7 @@
     "no-unneeded-ternary": "warn",
     "no-unused-expressions": "warn",
     "no-unused-labels": "warn",
+    "no-unused-vars": "off",
     "no-useless-call": "warn",
     "no-useless-catch": "warn",
     "no-useless-computed-key": "warn",
@@ -641,7 +640,8 @@
           "type"
         ],
         "newlines-between": "always"
-      }],
+      }
+    ],
     "sort-keys": ["warn", "asc", { "allowLineSeparatedGroups": true, "natural": true }],
     "sort-keys-fix/sort-keys-fix": "warn",
     "space-before-blocks": ["warn", { "classes": "always", "functions": "always", "keywords": "never" }],
@@ -657,6 +657,7 @@
     "template-curly-spacing": ["warn", "never"],
     "template-tag-spacing": ["warn", "never"],
     "unused-imports/no-unused-imports": "warn",
+    "unused-imports/no-unused-vars": "off",
     "yield-star-spacing": ["warn", { "after": false, "before": true }],
     "yoda": "warn"
   }

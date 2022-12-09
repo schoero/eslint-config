@@ -22,10 +22,9 @@
     "typescript-sort-keys",
     "import",
     "sort-keys-fix",
-    "eslint-plugin-jsonc",
-    "eslint-plugin-yml",
-    "eslint-plugin-import",
-    "eslint-plugin-tsdoc",
+    "jsonc",
+    "yml",
+    "tsdoc",
     "markdown"
   ],
   // eslint-disable-next-line jsonc/sort-keys

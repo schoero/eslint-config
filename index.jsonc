@@ -319,6 +319,7 @@
               "sideEffects",
               "exports",
               "main",
+              "browser",
               "bin",
               "module",
               "unpkg",

@@ -486,7 +486,17 @@
 
     {
       "files": ["**/*.md"],
-      "processor": "markdown/markdown",
+      "processor": "markdown/markdown"
+    },
+    {
+      "files": [
+        "**/*.md/*.ts",
+        "**/*.md/*.tsx",
+        "**/*.md/*.mts",
+        "**/*.md/*.mtsx",
+        "**/*.md/*.cts",
+        "**/*.md/*.ctsx"
+      ],
       "rules": {
         "import/newline-after-import": ["warn", { "count": 1 }],
         "unused-imports/no-unused-imports": "off"

@@ -495,7 +495,13 @@
         "**/*.md/*.mts",
         "**/*.md/*.mtsx",
         "**/*.md/*.cts",
-        "**/*.md/*.ctsx"
+        "**/*.md/*.ctsx",
+        "**/*.md/*.js",
+        "**/*.md/*.jsx",
+        "**/*.md/*.mjs",
+        "**/*.md/*.mjsx",
+        "**/*.md/*.cjs",
+        "**/*.md/*.cjsx"
       ],
       "rules": {
         "import/newline-after-import": ["warn", { "count": 1 }],

@@ -45,7 +45,7 @@
     //-- TypeScript
 
     {
-      "files": ["*.ts", "*.tsx", ".mts", ".mtsx", ".cts", ".ctsx"],
+      "files": ["*.ts", "*.tsx", "*.mts", "*.mtsx", "*.cts", "*.ctsx"],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "ecmaVersion": 2018,

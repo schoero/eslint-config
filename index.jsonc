@@ -20,6 +20,7 @@
     "unused-imports",
     "import-newlines",
     "typescript-sort-keys",
+    "simple-import-sort",
     "import",
     "sort-keys-fix",
     "jsonc",
@@ -27,17 +28,6 @@
     "tsdoc",
     "markdown"
   ],
-  "settings": {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx", ".mts", ".mtsx", ".cts", ".ctsx"]
-    },
-    "import/resolver": {
-      "typescript": {
-        "alwaysTryTypes": true,
-        "project": "tsconfig.json"
-      }
-    }
-  },
   // eslint-disable-next-line jsonc/sort-keys
   "overrides": [
 
@@ -526,8 +516,7 @@
     "function-paren-newline": ["warn", { "minItems": 6 }],
     "import/first": "warn",
     "import/newline-after-import": ["warn", { "count": 2 }],
-    "import/no-duplicates": "error",
-    "import/no-relative-packages": "warn",
+    "import/order": "off",
     "import-newlines/enforce": ["warn", { "items": 6, "max-len": 119 }],
     "indent": ["warn", 2, { "SwitchCase": 1 }],
     "jsx-quotes": ["warn", "prefer-double"],
@@ -632,25 +621,35 @@
     "semi": "warn",
     "semi-spacing": ["warn", { "after": true, "before": false }],
     "semi-style": ["warn", "last"],
-
+    "simple-import-sort/exports": "warn", // eslint-disable-next-line jsonc/sort-keys
     "sort-imports": "off", // eslint-disable-next-line jsonc/sort-keys
-    "import/order": [
-      "warn", {
-        "alphabetize": {
-          "caseInsensitive": true,
-          "order": "asc"
-        },
+    "simple-import-sort/imports": [
+      "warn",
+      {
         "groups": [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index",
-          "object",
-          "type"
-        ],
-        "newlines-between": "always"
+          // Node.js builtins. You could also generate this regex if you use a `.js` config.
+          // For example: `^(${require("module").builtinModules.join("|")})(/|$)`
+          // Note that if you use the `node:` prefix for Node.js builtins,
+          // you can avoid this complexity: You can simply use "^node:".
+          [
+            "^(assert|buffer|child_process|cluster|console|constants|crypto|dgram|dns|domain|events|fs|http|https|module|net|os|path|punycode|querystring|readline|repl|stream|string_decoder|sys|timers|tls|tty|url|util|vm|zlib|freelist|v8|process|async_hooks|http2|perf_hooks)(/.*|$)"
+          ],
+          // External packages.
+          ["^"],
+          // Internal packages.
+          ["^(@)(/.*|$)"],
+          ["^(?!node:)(.*):"],
+          // Side effect imports.
+          ["^\\u0000"],
+          // Parent imports. Put `..` last.
+          ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+          // Other relative imports. Put same-folder imports and `.` last.
+          ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+          // Style imports.
+          ["^.+\\.s?css$"],
+          // JSON imports.
+          ["^.+\\.jsonc?$"]
+        ]
       }
     ],
     "sort-keys": ["warn", "asc", { "allowLineSeparatedGroups": true, "natural": true }],

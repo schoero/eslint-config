@@ -214,7 +214,7 @@
         "@typescript-eslint/space-infix-ops": "warn",
 
         "@typescript-eslint/type-annotation-spacing": "warn",
-        "@typescript-eslint/unified-signatures": "warn",
+        "@typescript-eslint/unified-signatures": ["warn", { "ignoreDifferentlyNamedParameters": true }],
         "no-restricted-syntax": [
           "warn",
           {

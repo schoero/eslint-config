@@ -571,8 +571,8 @@
     "multiline-ternary": ["warn", "always-multiline"],
     "newline-per-chained-call": ["warn", { "ignoreChainWithDepth": 2 }],
     "no-constant-binary-expression": "warn",
-    "no-duplicate-imports": "off",
     "no-dupe-class-members": "error",
+    "no-duplicate-imports": "off",
     "no-empty-static-block": "warn",
     "no-extra-bind": "warn",
     "no-extra-parens": "warn",
@@ -664,6 +664,9 @@
           // Internal packages.
           ["^(@)(/.*|$)"],
           ["^(?!node:)(.*):"],
+          // Internal types.
+          ["^(@)(.*\\.d\\.js)"],
+          ["^(?!node:)(.*):(.*\\.d\\.js)"],
           // Side effect imports.
           ["^\\u0000"],
           // Parent imports. Put `..` last.

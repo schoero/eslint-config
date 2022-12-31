@@ -124,8 +124,45 @@
           "warn",
           {
             "format": ["camelCase"],
-            "modifiers": ["requiresQuotes"],
-            "selector": ["default"]
+            "selector": "default"
+          },
+          {
+            "format": ["camelCase", "UPPER_CASE", "PascalCase"],
+            "leadingUnderscore": "allow",
+            "selector": "objectLiteralProperty",
+            "trailingUnderscore": "allow"
+          },
+          {
+            "format": ["camelCase", "UPPER_CASE"],
+            "leadingUnderscore": "allow",
+            "selector": "variable"
+          },
+          {
+            "format": ["camelCase"],
+            "leadingUnderscore": "allow",
+            "selector": "parameter"
+          },
+          {
+            "format": ["camelCase"],
+            "leadingUnderscore": "require",
+            "modifiers": ["private"],
+            "selector": "memberLike"
+          },
+          {
+            "format": ["camelCase", "UPPER_CASE", "PascalCase"],
+            "leadingUnderscore": "allow",
+            "modifiers": ["override"],
+            "selector": "memberLike",
+            "trailingUnderscore": "allow"
+          },
+          {
+            "format": ["PascalCase"],
+            "selector": "typeLike"
+          },
+          {
+            "format": ["PascalCase"],
+            "selector": "class",
+            "trailingUnderscore": "allow"
           }
         ],
         "@typescript-eslint/no-base-to-string": "warn",

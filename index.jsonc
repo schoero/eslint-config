@@ -742,6 +742,40 @@
     "template-curly-spacing": ["warn", "never"],
     "template-tag-spacing": ["warn", "never"],
     "unicorn/better-regex": "warn",
+    "unicorn/consistent-destructuring": "warn",
+    "unicorn/empty-brace-spaces": "warn",
+    "unicorn/error-message": "warn",
+    "unicorn/no-await-expression-member": "warn",
+    "unicorn/no-empty-file": "warn",
+    "unicorn/no-instanceof-array": "warn",
+    "unicorn/no-unreadable-array-destructuring": "warn",
+    "unicorn/no-unsafe-regex": "warn",
+    "unicorn/no-useless-length-check": "warn",
+    "unicorn/no-useless-spread": "warn",
+    "unicorn/no-useless-undefined": "warn",
+    "unicorn/number-literal-case": "warn",
+    "unicorn/numeric-separators-style": ["warn", {
+      "binary": {
+        "groupLength": 4,
+        "minimumDigits": 0
+      },
+      "hexadecimal": {
+        "groupLength": 2,
+        "minimumDigits": 0
+      },
+      "number": {
+        "groupLength": 3,
+        "minimumDigits": 5
+      },
+      "octal": {
+        "groupLength": 4,
+        "minimumDigits": 0
+      },
+      "onlyIfContainsSeparator": true
+    }],
+    "unicorn/prefer-date-now": "warn",
+    "unicorn/prefer-export-from": ["warn", { "ignoreUsedVariables": true }],
+    "unicorn/prefer-negative-index": "warn",
     "unicorn/prefer-node-protocol": "warn",
     "unicorn/template-indent": [
       "warn",
@@ -751,6 +785,7 @@
         ]
       }
     ],
+    "unicorn/throw-new-error": "warn",
     "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": "off",
     "yield-star-spacing": ["warn", { "after": false, "before": true }],

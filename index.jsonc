@@ -620,6 +620,7 @@
     "no-constant-binary-expression": "warn",
     "no-dupe-class-members": "error",
     "no-duplicate-imports": "off",
+    "no-empty": ["warn", { "allowEmptyCatch": true }],
     "no-empty-static-block": "warn",
     "no-extra-bind": "warn",
     "no-extra-parens": "warn",

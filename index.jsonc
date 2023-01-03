@@ -23,7 +23,7 @@
     "typescript-sort-keys",
     "simple-import-sort",
     "import",
-    "sort-keys-fix",
+    "sort-keys",
     "unicorn",
     "jsonc",
     "yml",
@@ -127,10 +127,10 @@
         "@typescript-eslint/naming-convention": [
           "warn",
           {
-            "format": ["camelCase"],
-            "selector": "default"
-          },
-          {
+            "filter": {
+              "match": false,
+              "regex": "^[0-9]*$"
+            },
             "format": ["camelCase", "UPPER_CASE", "PascalCase"],
             "leadingUnderscore": "allow",
             "selector": "objectLiteralProperty",
@@ -728,8 +728,8 @@
         ]
       }
     ],
-    "sort-keys": ["warn", "asc", { "allowLineSeparatedGroups": true, "natural": true }],
-    "sort-keys-fix/sort-keys-fix": "warn",
+    "sort-keys": "off",
+    "sort-keys/sort-keys-fix": "warn",
     "space-before-blocks": ["warn", { "classes": "always", "functions": "always", "keywords": "never" }],
     "space-before-function-paren": ["warn", { "anonymous": "never", "asyncArrow": "always", "named": "never" }],
     "space-in-parens": ["warn", "never"],

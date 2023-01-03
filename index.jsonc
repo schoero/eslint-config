@@ -560,7 +560,7 @@
     "array-bracket-newline": ["warn", "consistent"],
     "array-bracket-spacing": ["warn", "never"],
     "array-element-newline": ["warn", "consistent"],
-    "arrow-body-style": ["warn", "as-needed"],
+    "arrow-body-style": ["warn", "as-needed", { "requireReturnForObjectLiteral": true }],
     "arrow-parens": ["warn", "as-needed"],
     "arrow-spacing": ["warn", { "after": true, "before": true }],
     "brace-style": ["warn", "1tbs", { "allowSingleLine": true }],

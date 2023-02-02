@@ -26,7 +26,15 @@
     "source.organizeImports": false,
   },
 
+  //-- Markdown
 
+  // eslint-disable-next-line jsonc/sort-keys
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.formatOnSave": true,
+  },
+
+  
   //-- File nesting
 
   "explorer.fileNesting.enabled": true,

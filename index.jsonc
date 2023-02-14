@@ -584,7 +584,7 @@
     "eqeqeq": ["warn", "always"],
     "func-call-spacing": ["warn", "never"],
     "func-style": ["warn", "declaration", { "allowArrowFunctions": true }],
-    "function-paren-newline": ["warn", { "minItems": 6 }],
+    "function-paren-newline": ["warn", "consistent", { "minItems": 6 }],
     "import/first": "warn",
     "import/newline-after-import": ["warn", { "count": 2 }],
     "import/no-duplicates": "warn",

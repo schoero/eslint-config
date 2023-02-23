@@ -229,16 +229,6 @@
           {
             "blankLine": "always",
             "next": "*",
-            "prev": "function"
-          },
-          {
-            "blankLine": "always",
-            "next": "function",
-            "prev": "*"
-          },
-          {
-            "blankLine": "always",
-            "next": "*",
             "prev": "class"
           },
           {
@@ -665,16 +655,6 @@
     "operator-linebreak": ["warn", "after", { "overrides": { ":": "before", "?": "before" } }],
     "padding-line-between-statements": [
       "warn",
-      {
-        "blankLine": "always",
-        "next": "*",
-        "prev": "function"
-      },
-      {
-        "blankLine": "always",
-        "next": "function",
-        "prev": "*"
-      },
       {
         "blankLine": "always",
         "next": "*",

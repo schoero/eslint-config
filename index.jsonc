@@ -33,6 +33,15 @@
     "tsdoc",
     "markdown"
   ],
+  "settings": {
+    "jsdoc": {
+      "mode": "jsdoc",
+      "tagNamePreference": {
+        "default": "defaultValue"
+      }
+    }
+  },
+
   // eslint-disable-next-line jsonc/sort-keys
   "overrides": [
 
@@ -44,11 +53,6 @@
       "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
-      },
-      "settings": {
-        "jsdoc": {
-          "mode": "jsdoc"
-        }
       }
     },
 
@@ -601,7 +605,14 @@
     "import/order": "off",
     "import-newlines/enforce": ["warn", { "items": 6, "max-len": 119 }],
     "indent": ["warn", 2, { "SwitchCase": 1 }],
-    "jsdoc/check-tag-names": ["warn", { "definedTags": ["alpha", "beta"] }],
+    "jsdoc/check-tag-names": ["warn", {
+      "definedTags": [
+        "alpha",
+        "beta",
+        "default",
+        "defaultValue"
+      ]
+    }],
     "jsdoc/require-jsdoc": "off",
     "jsx-quotes": ["warn", "prefer-double"],
     "key-spacing": ["warn", { "afterColon": true, "beforeColon": false }],

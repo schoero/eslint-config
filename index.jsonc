@@ -601,6 +601,7 @@
     "import/order": "off",
     "import-newlines/enforce": ["warn", { "items": 6, "max-len": 119 }],
     "indent": ["warn", 2, { "SwitchCase": 1 }],
+    "jsdoc/check-tag-names": ["warn", { "definedTags": ["alpha", "beta"] }],
     "jsdoc/require-jsdoc": "off",
     "jsx-quotes": ["warn", "prefer-double"],
     "key-spacing": ["warn", { "afterColon": true, "beforeColon": false }],

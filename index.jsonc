@@ -253,6 +253,8 @@
 
         "@typescript-eslint/type-annotation-spacing": "warn",
         "@typescript-eslint/unified-signatures": ["warn", { "ignoreDifferentlyNamedParameters": true }],
+
+        "jsdoc/no-types": "warn",
         "no-restricted-syntax": [
           "warn",
           {
@@ -272,6 +274,7 @@
           }
         ],
         "typescript-sort-keys/string-enum": "warn"
+
       }
     },
 
@@ -585,6 +588,7 @@
     "import/order": "off",
     "import-newlines/enforce": ["warn", { "items": 6, "max-len": 119 }],
     "indent": ["warn", 2, { "SwitchCase": 1 }],
+    "jsdoc/require-jsdoc": "off",
     "jsx-quotes": ["warn", "prefer-double"],
     "key-spacing": ["warn", { "afterColon": true, "beforeColon": false }],
     "keyword-spacing": [

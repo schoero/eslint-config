@@ -30,7 +30,6 @@
     "unicorn",
     "jsonc",
     "yml",
-    "tsdoc",
     "markdown"
   ],
   "settings": {
@@ -275,7 +274,6 @@
           }
         ],
         "no-undef": "off",
-        "tsdoc/syntax": "warn",
         "typescript-sort-keys/interface": [
           "warn",
           "asc",

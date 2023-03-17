@@ -255,7 +255,8 @@
         "semi": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/semi": "warn",
 
-        "@typescript-eslint/sort-type-union-intersection-members": "warn",
+        "@typescript-eslint/sort-type-constituents": "warn",
+        "@typescript-eslint/no-redundant-type-constituents": "warn",
 
         "space-infix-ops": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/space-infix-ops": "warn",

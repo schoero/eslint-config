@@ -30,7 +30,6 @@
     "eslint-plugin-markdown": "^3.0.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-sort-keys": "^2.3.5",
-    "eslint-plugin-typescript-sort-keys": "^2.1.0",
     "eslint-plugin-unicorn": "^46.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "eslint-plugin-yml": "^1.5.0"

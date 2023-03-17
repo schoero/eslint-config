@@ -23,7 +23,6 @@
     "unused-imports",
     "jsdoc",
     "import-newlines",
-    "typescript-sort-keys",
     "simple-import-sort",
     "import",
     "sort-keys",
@@ -135,6 +134,12 @@
             }
           }
         ],
+        "@typescript-eslint/member-ordering": ["warn", {
+          "default": {
+            "optionalityOrder": "required-first",
+            "order": "natural"
+          }
+        }],
         "@typescript-eslint/method-signature-style": ["warn", "property"],
         "@typescript-eslint/naming-convention": [
           "warn",
@@ -273,18 +278,7 @@
             "selector": "TSIndexSignature > Identifier[name='key'] > TSTypeAnnotation:has(TSNumberKeyword)"
           }
         ],
-        "no-undef": "off",
-        "typescript-sort-keys/interface": [
-          "warn",
-          "asc",
-          {
-            "caseSensitive": true,
-            "natural": true,
-            "requiredFirst": true
-          }
-        ],
-        "typescript-sort-keys/string-enum": "warn"
-
+        "no-undef": "off"
       },
       "settings": {
         "jsdoc": {

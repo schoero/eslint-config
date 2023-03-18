@@ -204,6 +204,7 @@
         "@typescript-eslint/no-misused-promises": "warn",
         "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "warn",
         "@typescript-eslint/no-non-null-asserted-optional-chain": "warn",
+        "@typescript-eslint/no-redundant-type-constituents": "warn",
         "@typescript-eslint/no-unnecessary-condition": "warn",
         "@typescript-eslint/no-unnecessary-type-arguments": "warn",
         "@typescript-eslint/no-unnecessary-type-assertion": "warn",
@@ -250,13 +251,12 @@
         ],
 
         "quotes": "off", // eslint-disable-next-line jsonc/sort-keys
-        "@typescript-eslint/quotes": ["warn", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
+        "@typescript-eslint/quotes": ["warn", "double", { "avoidEscape": true, "allowTemplateLiterals": false }],
 
         "semi": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/semi": "warn",
 
         "@typescript-eslint/sort-type-constituents": "warn",
-        "@typescript-eslint/no-redundant-type-constituents": "warn",
 
         "space-infix-ops": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/space-infix-ops": "warn",
@@ -703,7 +703,7 @@
     "prefer-object-spread": "warn",
     "prefer-template": "warn",
     "quote-props": ["warn", "consistent-as-needed"],
-    "quotes": ["warn", "double", { "allowTemplateLiterals": true, "avoidEscape": true }],
+    "quotes": ["warn", "double", { "allowTemplateLiterals": false, "avoidEscape": true }],
     "radix": "warn",
     "rest-spread-spacing": ["warn", "never"],
     "semi": "warn",

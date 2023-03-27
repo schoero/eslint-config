@@ -3,7 +3,6 @@
     "@schoero/cspell-config"
   ],
   "words": [
-    "tailwindcss",
     "classname"
   ]
 }

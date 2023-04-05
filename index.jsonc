@@ -226,7 +226,6 @@
         "@typescript-eslint/prefer-optional-chain": "warn",
         "@typescript-eslint/prefer-reduce-type-parameter": "warn",
         "@typescript-eslint/prefer-string-starts-ends-with": "warn",
-        "@typescript-eslint/no-duplicate-type-constituents": "warn",
         "@typescript-eslint/prefer-ts-expect-error": "warn",
         "@typescript-eslint/promise-function-async": "warn",
         "@typescript-eslint/restrict-plus-operands": "error",
@@ -805,6 +804,15 @@
         "words": true
       }],
     "spaced-comment": ["warn", "always", { "exceptions": ["-", "+"], "markers": ["--"] }],
+
+
+    //-- Tailwind CSS
+
+    "tailwindcss/classnames-order": "warn",
+    "tailwindcss/enforces-negative-arbitrary-values": "warn",
+    "tailwindcss/enforces-shorthand": "warn",
+    "tailwindcss/no-contradicting-classname": "warn",
+    "tailwindcss/no-custom-classname": "off",
     "template-curly-spacing": ["warn", "never"],
     "template-tag-spacing": ["warn", "never"],
     "unicorn/better-regex": "warn",
@@ -855,16 +863,7 @@
     "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": "off",
     "yield-star-spacing": ["warn", { "after": false, "before": true }],
-    "yoda": "warn",
-
-
-    //-- Tailwind CSS
-
-    "tailwindcss/classnames-order": "warn",
-    "tailwindcss/enforces-negative-arbitrary-values": "warn",
-    "tailwindcss/enforces-shorthand": "warn",
-    "tailwindcss/no-contradicting-classname": "warn",
-    "tailwindcss/no-custom-classname": "off"
+    "yoda": "warn"
 
   }
 }

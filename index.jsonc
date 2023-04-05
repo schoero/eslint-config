@@ -767,7 +767,7 @@
           // External packages.
           ["^"],
           // Internal packages.
-          ["^@(.*|$)"],
+          ["^@"],
           ["^(?!node:)(.*):"],
           // Parent imports. Put `..` last.
           ["^\\.\\.(?!/?.*\\u0000$)", "^\\.\\./?(?!.*\\u0000$)"],

@@ -155,12 +155,12 @@
             "selector": "variable"
           },
           {
-            "selector": "interface",
-            "format": ["PascalCase"],
             "custom": {
-              "regex": "^I[A-Z]",
-              "match": false
-            }
+              "match": false,
+              "regex": "^I[A-Z]"
+            },
+            "format": ["PascalCase"],
+            "selector": "interface"
           },
           {
             "format": ["camelCase"],

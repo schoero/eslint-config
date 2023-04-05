@@ -240,7 +240,14 @@
         ],
 
         "no-unused-expressions": "off", // eslint-disable-next-line jsonc/sort-keys
-        "@typescript-eslint/no-unused-expressions": "warn",
+        "@typescript-eslint/no-unused-expressions": [
+          "warn",
+          {
+            "allowShortCircuit": true,
+            "allowTaggedTemplates": true,
+            "allowTernary": true
+          }
+        ],
 
         "object-curly-spacing": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/object-curly-spacing": ["warn", "always"],
@@ -693,7 +700,14 @@
     "no-trailing-spaces": "warn",
     "no-unexpected-multiline": "warn",
     "no-unneeded-ternary": "warn",
-    "no-unused-expressions": "warn",
+    "no-unused-expressions": [
+      "warn",
+      {
+        "allowShortCircuit": true,
+        "allowTaggedTemplates": true,
+        "allowTernary": true
+      }
+    ],
     "no-unused-labels": "warn",
     "no-unused-vars": "off",
     "no-useless-call": "warn",

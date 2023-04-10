@@ -195,6 +195,7 @@
           }
         ],
         "@typescript-eslint/no-base-to-string": "warn",
+        "@typescript-eslint/no-unsafe-enum-comparison": "warn",
 
         "no-dupe-class-members": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/no-dupe-class-members": "error",

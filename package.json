@@ -12,13 +12,19 @@
   "bugs": {
     "url": "https://github.com/schoero/eslint-config/issues"
   },
-  "main": "index.jsonc",
+  "main": "./src/index.jsonc",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    "index.jsonc"
+    "src"
   ],
+  "exports": {
+    ".": "./src/index.jsonc",
+    "./qwik": "./src/qwik/index.jsonc"
+  },
+  "browser": "./src/index.jsonc",
+  "module": "./src/index.jsonc",
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.59.1",
     "@typescript-eslint/parser": "^5.59.1",

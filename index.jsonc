@@ -827,7 +827,9 @@
     "unicorn/no-unsafe-regex": "warn",
     "unicorn/no-useless-length-check": "warn",
     "unicorn/no-useless-spread": "warn",
-    "unicorn/no-useless-undefined": "warn",
+    "unicorn/no-useless-undefined": ["warn", {
+      "checkArguments": false
+    }],
     "unicorn/number-literal-case": "warn",
     "unicorn/numeric-separators-style": ["warn", {
       "binary": {

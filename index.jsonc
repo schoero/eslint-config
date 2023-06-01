@@ -27,6 +27,7 @@
     "simple-import-sort",
     "import",
     "sort-keys",
+    "sort-destructure-keys",
     "unicorn",
     "jsonc",
     "yml",
@@ -793,6 +794,7 @@
         ]
       }
     ],
+    "sort-destructure-keys/sort-destructure-keys": "warn",
     "sort-keys": "off",
     "sort-keys/sort-keys-fix": "warn",
     "space-before-blocks": ["warn", { "classes": "always", "functions": "always", "keywords": "never" }],

@@ -840,25 +840,6 @@
     "unicorn/consistent-destructuring": "warn",
     "unicorn/empty-brace-spaces": "warn",
     "unicorn/error-message": "warn",
-
-
-    //-- Vitest
-
-    "vitest/expect-expect": "warn",
-    "vitest/no-alias-methods": "warn",
-    "vitest/no-identical-title": "warn",
-    "vitest/prefer-comparison-matcher": "warn",
-    "vitest/prefer-each": "warn",
-    "vitest/prefer-equality-matcher": "warn",
-    "vitest/prefer-lowercase-title": "warn",
-    "vitest/prefer-to-be": "warn",
-    "vitest/prefer-to-have-length": "warn",
-    "vitest/prefer-todo": "warn",
-    "vitest/valid-expect": "warn",
-    "vitest/valid-title": "warn",
-    "vitest/prefer-to-contain": "warn",
-    "vitest/prefer-to-be-object": "warn",
-    "vitest/prefer-expect-resolves": "warn",
     "unicorn/no-await-expression-member": "warn",
     "unicorn/no-empty-file": "warn",
     "unicorn/no-instanceof-array": "warn",
@@ -904,6 +885,25 @@
     "unicorn/throw-new-error": "warn",
     "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": "off",
+
+
+    //-- Vitest
+
+    "vitest/expect-expect": "warn",
+    "vitest/no-alias-methods": "warn",
+    "vitest/no-identical-title": "warn",
+    "vitest/prefer-comparison-matcher": "warn",
+    "vitest/prefer-each": "warn",
+    "vitest/prefer-equality-matcher": "warn",
+    "vitest/prefer-expect-resolves": "warn",
+    "vitest/prefer-lowercase-title": "warn",
+    "vitest/prefer-to-be": "warn",
+    "vitest/prefer-to-be-object": "warn",
+    "vitest/prefer-to-contain": "warn",
+    "vitest/prefer-to-have-length": "warn",
+    "vitest/prefer-todo": "warn",
+    "vitest/valid-expect": "warn",
+    "vitest/valid-title": "warn",
     "yield-star-spacing": ["warn", { "after": false, "before": true }],
     "yoda": "warn"
 

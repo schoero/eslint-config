@@ -35,6 +35,7 @@
     "eslint-plugin-typescript-sort-keys": "^2.3.0",
     "eslint-plugin-unicorn": "^47.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
+    "eslint-plugin-vitest": "^0.2.5",
     "eslint-plugin-yml": "^1.7.0"
   },
   "devDependencies": {

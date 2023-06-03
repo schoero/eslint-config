@@ -354,6 +354,16 @@
     },
 
 
+    //-- config js files
+
+    {
+      "files": ["*.config.js"],
+      "rules": {
+        "jsdoc/valid-types": "off"
+      }
+    },
+
+
     //-- Standalone TypeScript
 
     {

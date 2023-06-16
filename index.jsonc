@@ -793,6 +793,7 @@
         "groups": [
           // Side effect imports.
           ["^\\u0000"],
+          // Node builtins
           ["^node:"],
           // External packages.
           ["^"],
@@ -914,6 +915,7 @@
     "vitest/prefer-todo": "warn",
     "vitest/valid-expect": "warn",
     "vitest/valid-title": "warn",
+
     "yield-star-spacing": ["warn", { "after": false, "before": true }],
     "yoda": "warn"
 

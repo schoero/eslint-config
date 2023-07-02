@@ -26,6 +26,7 @@
     "source.organizeImports": false,
   },
 
+
   //-- Markdown
 
   // eslint-disable-next-line jsonc/sort-keys
@@ -34,7 +35,7 @@
     "editor.formatOnSave": true,
   },
 
-  
+
   //-- File nesting
 
   "explorer.fileNesting.enabled": true,

@@ -1,5 +1,5 @@
 {
-  "version": "1.41.7",
+  "version": "1.41.8",
   "name": "@schoero/eslint-config",
   "description": "Personal ESLint config",
   "license": "MIT",

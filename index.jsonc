@@ -688,6 +688,7 @@
       ]
     }],
     "jsdoc/require-jsdoc": "off",
+    "jsdoc/require-throws": "warn",
     "jsx-quotes": ["warn", "prefer-double"],
     "key-spacing": ["warn", { "afterColon": true, "beforeColon": false }],
     "keyword-spacing": [

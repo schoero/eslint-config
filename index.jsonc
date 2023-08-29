@@ -283,9 +283,12 @@
         "@typescript-eslint/type-annotation-spacing": "warn",
         "@typescript-eslint/unified-signatures": ["warn", { "ignoreDifferentlyNamedParameters": true }],
 
+        // Disable JSDoc types
         "jsdoc/no-types": "warn",
         "jsdoc/require-param-type": "off",
+        "jsdoc/require-property-type": "off",
         "jsdoc/require-returns-type": "off",
+
         "no-restricted-syntax": [
           "warn",
           {
@@ -677,6 +680,14 @@
     "import/order": "off",
     "import-newlines/enforce": ["warn", { "items": 6, "max-len": 119 }],
     "indent": ["warn", 2, { "SwitchCase": 1 }],
+
+    // JSDoc
+    "jsdoc/check-alignment": "warn",
+    "jsdoc/check-indentation": "warn",
+    "jsdoc/check-param-names": ["warn", {
+      "enableFixer": true
+    }],
+    "jsdoc/check-property-names": "warn",
     "jsdoc/check-tag-names": ["warn", {
       "definedTags": [
         "alpha",
@@ -687,8 +698,25 @@
         "remarks"
       ]
     }],
+    "jsdoc/no-bad-blocks": "warn",
+    "jsdoc/no-blank-block-descriptions": "warn",
+    "jsdoc/no-blank-blocks": ["warn", {
+      "enableFixer": true
+    }],
+    "jsdoc/no-defaults": "warn",
+    "jsdoc/no-multi-asterisks": "warn",
+    "jsdoc/require-asterisk-prefix": "warn",
+    "jsdoc/require-description": "warn",
+    "jsdoc/require-hyphen-before-param-description": ["warn", "never"],
     "jsdoc/require-jsdoc": "off",
+    "jsdoc/require-param-description": "warn",
+    "jsdoc/require-param-name": "warn",
+    "jsdoc/require-returns": "warn",
+    "jsdoc/require-returns-description": "warn",
     "jsdoc/require-throws": "warn",
+    "jsdoc/require-yields": "warn",
+    "jsdoc/sort-tags": "warn",
+
     "jsx-quotes": ["warn", "prefer-double"],
     "key-spacing": ["warn", { "afterColon": true, "beforeColon": false }],
     "keyword-spacing": [

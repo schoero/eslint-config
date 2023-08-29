@@ -47,9 +47,7 @@
   // eslint-disable-next-line jsonc/sort-keys
   "overrides": [
 
-
-    //-- JavaScript
-
+    // JavaScript
     {
       "files": ["*.js", "*.jsx"],
       "parserOptions": {
@@ -58,9 +56,7 @@
       }
     },
 
-
-    //-- TypeScript
-
+    // TypeScript
     {
       "files": ["*.ts", "*.tsx", "*.mts", "*.mtsx", "*.cts", "*.ctsx"],
       "parser": "@typescript-eslint/parser",
@@ -316,9 +312,7 @@
       }
     },
 
-
-    //-- TSX
-
+    // TSX
     {
       "files": ["*.tsx", "*.mtsx", "*.ctsx"],
       "parser": "@typescript-eslint/parser",
@@ -343,9 +337,7 @@
       }
     },
 
-
-    //-- Vitest type tests
-
+    // Vitest type tests
     {
       "files": ["*.test-d.ts"],
       "parser": "@typescript-eslint/parser",
@@ -360,9 +352,7 @@
       }
     },
 
-
-    //-- config js files
-
+    // config js files
     {
       "files": ["*.config.js"],
       "rules": {
@@ -370,9 +360,7 @@
       }
     },
 
-
-    //-- Standalone TypeScript
-
+    // Standalone TypeScript
     {
       "files": [
         "**/*.config.ts",
@@ -419,9 +407,7 @@
       }
     },
 
-
-    //-- Package json
-
+    // Package json
     {
       "files": ["package.json"],
       "rules": {
@@ -495,9 +481,7 @@
       }
     },
 
-
-    //-- TSConfig json
-
+    // TSConfig json
     {
       "files": ["tsconfig.json", "tsconfig.*.json"],
       "rules": {
@@ -524,9 +508,7 @@
       }
     },
 
-
-    //-- eslintrc json
-
+    // eslintrc json
     {
       "files": [".eslintrc.json", "eslintrc.json"],
       "rules": {
@@ -553,9 +535,7 @@
       }
     },
 
-
-    //-- YAML
-
+    // YAML
     {
       "excludedFiles": ["pnpm-lock.yaml"],
       "files": ["*.yaml", "*.yml"],
@@ -574,9 +554,7 @@
       }
     },
 
-
-    //-- GitHub CI/CD
-
+    // GitHub CI/CD
     {
       "files": ["**/.github/workflows/*.yaml", "**/.github/workflows/*.yml"],
       "parser": "yaml-eslint-parser",
@@ -619,9 +597,7 @@
       }
     },
 
-
-    //-- Markdown
-
+    // Markdown
     {
       "files": ["**/*.md"],
       "processor": "markdown/markdown"
@@ -649,9 +625,7 @@
 
   ],
 
-
-  //-- Default (JavaScript)
-
+  // Default (JavaScript)
   "rules": {
     "array-bracket-newline": ["warn", "consistent"],
     "array-bracket-spacing": ["warn", "never"],
@@ -871,18 +845,14 @@
       }],
     "spaced-comment": ["warn", "always", { "exceptions": ["-", "+"], "markers": ["--"] }],
 
-
-    //-- Tailwind CSS
-
+    // Tailwind CSS
     "tailwindcss/classnames-order": "warn",
     "tailwindcss/enforces-negative-arbitrary-values": "warn",
     "tailwindcss/enforces-shorthand": "warn",
     "tailwindcss/no-contradicting-classname": "warn",
     "tailwindcss/no-custom-classname": "off",
 
-
-    //-- Unicorn
-
+    // Unicorn
     "template-curly-spacing": ["warn", "never"],
     "template-tag-spacing": ["warn", "never"],
     "unicorn/better-regex": "warn",
@@ -935,9 +905,7 @@
     "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": "off",
 
-
-    //-- Vitest
-
+    // Vitest
     "vitest/expect-expect": "warn",
     "vitest/no-alias-methods": "warn",
     "vitest/no-identical-title": "warn",

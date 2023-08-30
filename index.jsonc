@@ -373,9 +373,7 @@
         "**/*.md/*.cts",
         "**/*.md/*.ctsx"
       ],
-      "parserOptions": {
-        "createDefaultProgram": true
-      }
+      "extends": ["plugin:@typescript-eslint/disable-type-checked"]
     },
 
     // JSON

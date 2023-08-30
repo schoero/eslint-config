@@ -378,9 +378,7 @@
       }
     },
 
-
-    // -- JSON
-
+    // JSON
     {
       "excludedFiles": ["package-lock.json", "yarn.lock", ".vscode/settings.json"],
       "files": ["*.json", "*.json5", "*.jsonc"],

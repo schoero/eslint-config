@@ -118,7 +118,7 @@
         ],
 
         "lines-between-class-members": "off", // eslint-disable-next-line jsonc/sort-keys
-        "@typescript-eslint/lines-between-class-members": ["warn", { "exceptAfterSingleLine": true }],
+        "@typescript-eslint/lines-between-class-members": ["warn", "always", { "exceptAfterSingleLine": true }],
 
         "@typescript-eslint/member-delimiter-style": [
           "warn",

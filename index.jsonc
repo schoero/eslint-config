@@ -167,7 +167,7 @@
           },
           {
             "format": ["camelCase"],
-            "leadingUnderscore": "require",
+            "leadingUnderscore": "allow",
             "modifiers": ["private"],
             "selector": "memberLike"
           },

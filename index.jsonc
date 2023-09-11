@@ -203,13 +203,11 @@
 
         "no-extra-semi": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/no-extra-semi": "warn",
-        "@typescript-eslint/no-floating-promises": "warn",
 
         "no-loss-of-precision": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/no-loss-of-precision": "warn",
 
         "@typescript-eslint/no-misused-new": "warn",
-        "@typescript-eslint/no-misused-promises": ["warn", { "checksVoidReturn": false }],
         "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "warn",
         "@typescript-eslint/no-non-null-asserted-optional-chain": "warn",
         "@typescript-eslint/no-redundant-type-constituents": "warn",
@@ -227,7 +225,6 @@
         "@typescript-eslint/prefer-reduce-type-parameter": "warn",
         "@typescript-eslint/prefer-string-starts-ends-with": "warn",
         "@typescript-eslint/prefer-ts-expect-error": "warn",
-        "@typescript-eslint/promise-function-async": "warn",
         "@typescript-eslint/restrict-plus-operands": "error",
         "@typescript-eslint/restrict-template-expressions": [
           "warn",
@@ -237,6 +234,12 @@
             "allowNumber": true
           }
         ],
+
+        // Promise
+        "@typescript-eslint/no-floating-promises": "warn",
+        "@typescript-eslint/no-misused-promises": ["warn", { "checksVoidReturn": false }],
+        "no-async-promise-executor": "off",
+        "@typescript-eslint/promise-function-async": "warn",
 
         "no-unused-expressions": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/no-unused-expressions": [

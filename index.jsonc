@@ -70,7 +70,6 @@
         "@typescript-eslint/array-type": ["warn", { "default": "array", "readonly": "array" }],
         "@typescript-eslint/await-thenable": "warn",
         "@typescript-eslint/ban-ts-comment": ["warn", { "ts-ignore": "allow-with-description" }],
-        "@typescript-eslint/consistent-type-imports": ["warn", { "disallowTypeAnnotations": false }],
 
         "brace-style": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/brace-style": ["warn", "1tbs", { "allowSingleLine": true }],
@@ -288,6 +287,10 @@
         "jsdoc/require-param-type": "off",
         "jsdoc/require-property-type": "off",
         "jsdoc/require-returns-type": "off",
+
+        // Imports
+        "@typescript-eslint/consistent-type-imports": ["warn", { "disallowTypeAnnotations": false }],
+        "import/consistent-type-specifier-style": ["warn", "prefer-top-level"],
 
         "no-restricted-syntax": [
           "warn",
@@ -646,6 +649,9 @@
     "func-call-spacing": ["warn", "never"],
     "func-style": ["warn", "declaration", { "allowArrowFunctions": true }],
     "function-paren-newline": ["warn", "multiline-arguments"],
+    "indent": ["warn", 2, { "SwitchCase": 1 }],
+
+    // Imports
     "import/first": "warn",
     "import/newline-after-import": ["warn", { "count": 2 }],
     "import/no-duplicates": "warn",
@@ -653,7 +659,6 @@
     "import/no-useless-path-segments": ["warn", { "noUselessIndex": false }],
     "import/order": "off",
     "import-newlines/enforce": ["warn", { "items": 6, "max-len": 119 }],
-    "indent": ["warn", 2, { "SwitchCase": 1 }],
 
     // JSDoc
     "jsdoc/check-alignment": "warn",

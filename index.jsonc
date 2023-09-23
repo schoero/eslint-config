@@ -812,6 +812,7 @@
           ["^"],
           // Internal packages.
           ["^@"],
+          ["^@schoero"],
           ["^(?!node:)(.*):"],
           // Parent imports. Put `..` last.
           ["^\\.\\.(?!/?.*\\u0000$)", "^\\.\\./?(?!.*\\u0000$)"],
@@ -828,6 +829,7 @@
           ["\\u0000$"],
           // Types from internal packages.
           ["^@(.*)\\u0000$"],
+          ["^@schoero(.*)\\u0000$"],
           ["^(?!node:)(.*):(.*)\\u0000$"],
           // Types from parent imports. Put `..` last.
           ["^\\.\\.(?=/?\\u0000$)", "^\\.\\./?\\u0000$"],

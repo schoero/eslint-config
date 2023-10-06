@@ -82,6 +82,9 @@
 
         "@typescript-eslint/consistent-generic-constructors": ["warn", "constructor"],
 
+
+        // Imports
+        "@typescript-eslint/consistent-type-imports": ["warn", { "disallowTypeAnnotations": false }],
         "dot-notation": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/dot-notation": ["warn", { "allowKeywords": true }],
 
@@ -203,10 +206,14 @@
         "no-extra-semi": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/no-extra-semi": "warn",
 
+
+        // Promise
+        "@typescript-eslint/no-floating-promises": "warn",
         "no-loss-of-precision": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/no-loss-of-precision": "warn",
 
         "@typescript-eslint/no-misused-new": "warn",
+        "@typescript-eslint/no-misused-promises": ["warn", { "checksVoidReturn": false }],
         "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "warn",
         "@typescript-eslint/no-non-null-asserted-optional-chain": "warn",
         "@typescript-eslint/no-redundant-type-constituents": "warn",
@@ -224,6 +231,7 @@
         "@typescript-eslint/prefer-reduce-type-parameter": "warn",
         "@typescript-eslint/prefer-string-starts-ends-with": "warn",
         "@typescript-eslint/prefer-ts-expect-error": "warn",
+        "@typescript-eslint/promise-function-async": "warn",
         "@typescript-eslint/restrict-plus-operands": "error",
         "@typescript-eslint/restrict-template-expressions": [
           "warn",
@@ -233,12 +241,7 @@
             "allowNumber": true
           }
         ],
-
-        // Promise
-        "@typescript-eslint/no-floating-promises": "warn",
-        "@typescript-eslint/no-misused-promises": ["warn", { "checksVoidReturn": false }],
         "no-async-promise-executor": "off",
-        "@typescript-eslint/promise-function-async": "warn",
 
         "no-unused-expressions": "off", // eslint-disable-next-line jsonc/sort-keys
         "@typescript-eslint/no-unused-expressions": [
@@ -282,15 +285,12 @@
         "@typescript-eslint/type-annotation-spacing": "warn",
         "@typescript-eslint/unified-signatures": ["warn", { "ignoreDifferentlyNamedParameters": true }],
 
+        "import/consistent-type-specifier-style": ["warn", "prefer-top-level"],
         // Disable JSDoc types
         "jsdoc/no-types": "warn",
         "jsdoc/require-param-type": "off",
         "jsdoc/require-property-type": "off",
         "jsdoc/require-returns-type": "off",
-
-        // Imports
-        "@typescript-eslint/consistent-type-imports": ["warn", { "disallowTypeAnnotations": false }],
-        "import/consistent-type-specifier-style": ["warn", "prefer-top-level"],
 
         "no-restricted-syntax": [
           "warn",
@@ -369,6 +369,7 @@
 
     // Standalone TypeScript
     {
+      "extends": ["plugin:@typescript-eslint/disable-type-checked"],
       "files": [
         "**/*.config.ts",
         "**/*.config.mts",
@@ -379,8 +380,7 @@
         "**/*.md/*.mtsx",
         "**/*.md/*.cts",
         "**/*.md/*.ctsx"
-      ],
-      "extends": ["plugin:@typescript-eslint/disable-type-checked"]
+      ]
     },
 
     // JSON
@@ -649,7 +649,6 @@
     "func-call-spacing": ["warn", "never"],
     "func-style": ["warn", "declaration", { "allowArrowFunctions": true }],
     "function-paren-newline": ["warn", "multiline-arguments"],
-    "indent": ["warn", 2, { "SwitchCase": 1 }],
 
     // Imports
     "import/first": "warn",
@@ -659,6 +658,7 @@
     "import/no-useless-path-segments": ["warn", { "noUselessIndex": false }],
     "import/order": "off",
     "import-newlines/enforce": ["warn", { "items": 6, "max-len": 119 }],
+    "indent": ["warn", 2, { "SwitchCase": 1 }],
 
     // JSDoc
     "jsdoc/check-alignment": "warn",
@@ -853,10 +853,10 @@
     "spaced-comment": ["warn", "always", { "exceptions": ["-", "+"], "markers": ["--"] }],
 
     // Tailwind CSS
-    "tailwindcss/classnames-order": "warn",
-    "tailwindcss/enforces-negative-arbitrary-values": "warn",
-    "tailwindcss/enforces-shorthand": "warn",
-    "tailwindcss/no-contradicting-classname": "warn",
+    "tailwindcss/classnames-order": ["warn", { "callees": ["twMerge", "twJoin"] }],
+    "tailwindcss/enforces-negative-arbitrary-values": ["warn", { "callees": ["twMerge", "twJoin"] }],
+    "tailwindcss/enforces-shorthand": ["warn", { "callees": ["twMerge", "twJoin"] }],
+    "tailwindcss/no-contradicting-classname": ["warn", { "callees": ["twMerge", "twJoin"] }],
     "tailwindcss/no-custom-classname": "off",
 
     // Unicorn

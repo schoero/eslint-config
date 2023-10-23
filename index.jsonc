@@ -195,6 +195,12 @@
           }
         ],
         "@typescript-eslint/no-base-to-string": "warn",
+
+        "@typescript-eslint/no-confusing-void-expression": ["warn", {
+          "ignoreArrowShorthand": true,
+          "ignoreVoidOperator": true
+        }],
+
         "@typescript-eslint/no-unsafe-enum-comparison": "off",
 
         "no-dupe-class-members": "off", // eslint-disable-next-line jsonc/sort-keys
@@ -293,6 +299,7 @@
         "@typescript-eslint/unified-signatures": ["warn", { "ignoreDifferentlyNamedParameters": true }],
 
         "import/consistent-type-specifier-style": ["warn", "prefer-top-level"],
+
         // Disable JSDoc types
         "jsdoc/no-types": "warn",
         "jsdoc/require-param-type": "off",

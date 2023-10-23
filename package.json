@@ -39,7 +39,7 @@
     "eslint-plugin-yml": "^1.9.0"
   },
   "devDependencies": {
-    "@schoero/cspell-config": "^1.6.16",
-    "eslint": "^8.50.0"
+    "@schoero/cspell-config": "^1.8.2",
+    "eslint": "^8.52.0"
   }
 }
